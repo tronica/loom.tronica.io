@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if title %}{{ title }} — {% endif %}loom</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="sidebar-overlay"
+      id="sidebarOverlay"
+      onclick="closeSidebar()"
+    ></div>
+    <aside class="sidebar-drawer" id="sidebarDrawer">
+      <div class="sidebar-drawer-header">
+        <span class="sidebar-drawer-title">loom</span>
+        <button class="sidebar-close" onclick="closeSidebar()">✕</button>
+      </div>
+      <nav class="sidebar-drawer-nav">
+        <div class="sidebar-drawer-section-title">sections</div>
+        <ul class="sidebar-drawer-list">
+          {% set sections = [] %} {% for item in collections.recent %} {% set
+          sec = item.url | section %} {% if sec and sec not in sections %} {%
+          set sections = sections.concat([sec]) %} {% endif %} {% endfor %} {%
+          for sec in sections %}
+          <li><a href="/{{ sec }}/">{{ sec }}</a></li>
+          {% endfor %}
+        </ul>
+        <div class="sidebar-drawer-section-title">recent</div>
+        <ul class="sidebar-drawer-list">
+          {% for item in collections.recent %} {% if loop.index <= 8 %}
+          <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+          {% endif %} {% endfor %}
+        </ul>
+      </nav>
+    </aside>
+
+    <header class="site-header">
+      <nav class="nav">
+        <div class="nav-left">
+          <button
+            class="sidebar-toggle"
+            onclick="openSidebar()"
+            aria-label="Open sidebar"
+          >
+            ☰
+          </button>
+          <a href="/" class="nav-brand">
+            <span class="nav-brand-title">loom</span
+            ><span class="nav-brand-cursor"></span>
+          </a>
+        </div>
+        <div class="nav-links">
+          {% set sections = [] %} {% for item in collections.recent %} {% set
+          sec = item.url | section %} {% if sec and sec not in sections %} {%
+          set sections = sections.concat([sec]) %} {% endif %} {% endfor %} {%
+          for sec in sections %}
+          <a href="/{{ sec }}/" class="nav-section">{{ sec }}</a>
+          {% if not loop.last %}<span class="nav-sep">·</span>{% endif %} {%
+          endfor %}
+          <a href="/search/" class="nav-search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            [?]
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      {% if page_layout == "raw" %}
+      <div class="raw-content">{{ content | safe }}</div>
+
+      {% elif page_layout == "home" %} {{ content | safe }} {% else %}
+      <article class="prose">
+        {% set sec = page.url | section %}
+        <a href="javascript:history.back()" class="back-btn">← back</a>
+        <div class="breadcrumb">
+          <a href="/">~</a>
+          {% if sec %}
+          <span class="sep">/</span>
+          <a href="/{{ sec }}/">{{ sec }}</a>
+          {% endif %}
+          <span class="sep">/</span>
+          <span>{{ title | lower }}</span>
+        </div>
+        <h1>{{ title }}</h1>
+        <div class="prose-meta">
+          <span
+            ><time datetime="{{ page.date | dateISO }}"
+              >{{ page.date | dateFormat }}</time
+            ></span
+          >
+          {% if agent_task %}<span class="badge-agent"
+            >⚡ agent :: {{ agent_task }}</span
+          >{% endif %}
+        </div>
+        <div class="prose-body">{{ content | safe }}</div>
+      </article>
+      {% endif %}
+    </main>
+
+    <script>
+      function openSidebar() {
+        document.getElementById("sidebarDrawer").classList.add("open");
+        document.getElementById("sidebarOverlay").classList.add("open");
+      }
+      function closeSidebar() {
+        document.getElementById("sidebarDrawer").classList.remove("open");
+        document.getElementById("sidebarOverlay").classList.remove("open");
+      }
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeSidebar();
+      });
+    </script>
+
+    <footer class="site-footer">
+      <span class="status-mode">NORMAL</span>
+      <span class="status-path">loom/</span>
+      <span class="status-middle">
+        personal knowledge base &nbsp;·&nbsp; editable by humans &amp; agents
+      </span>
+      <div class="status-right">
+        <span>{{ collections.recent | length }} pages</span>
+        <span class="status-ok">● ready</span>
+      </div>
+    </footer>
+  </body>
+</html>

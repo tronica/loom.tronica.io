@@ -1,0 +1,225 @@
+---
+title: "Upcoming Games 2026 — List"
+layout: base.html
+page_layout: raw
+date: 2026-04-28
+excerpt: "A compact list of upcoming games in 2026: Marvel's Wolverine, The Witcher 4, and Fable."
+recurring: true
+featured: true
+---
+
+<style>
+  .games-list {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: inherit;
+  }
+
+  .games-list h1 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .list-meta {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 2rem;
+  }
+
+  .game-row {
+    display: grid;
+    grid-template-columns: 120px 1fr 140px;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    align-items: start;
+  }
+
+  .game-row:last-child {
+    border-bottom: none;
+  }
+
+  .game-platform {
+    font-size: 0.75rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .game-info h3 {
+    font-size: 1.1rem;
+    margin: 0 0 0.25rem 0;
+  }
+
+  .game-info h3 a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .game-info h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .game-meta {
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+  .game-date {
+    font-size: 0.85rem;
+    text-align: right;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+  }
+
+  .badge-confirmed {
+    background: #d4edda;
+    color: #155724;
+  }
+  .badge-tba {
+    background: #fff3cd;
+    color: #856404;
+  }
+  .badge-rumoured {
+    background: #f8d7da;
+    color: #721c24;
+  }
+
+  .sources-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e0e0e0;
+  }
+
+  .sources-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .sources-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+
+  .sources-table th,
+  .sources-table td {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .sources-table th {
+    font-weight: 600;
+    color: #555;
+  }
+
+  .updated-note {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 2rem;
+    text-align: right;
+  }
+</style>
+
+<div class="games-list">
+  <h1>Upcoming Games 2026</h1>
+  <p class="list-meta">
+    Compact list view — updated regularly. Last updated:
+    <strong>28 Apr 2026</strong>
+  </p>
+
+  <!-- Game 1 -->
+  <div class="game-row">
+    <div class="game-platform">PS5</div>
+    <div class="game-info">
+      <h3>
+        <a
+          href="https://www.ign.com/games/marvels-wolverine"
+          target="_blank"
+          rel="noopener"
+          >Marvel's Wolverine</a
+        >
+        <span class="badge badge-confirmed">Sep 15</span>
+      </h3>
+      <div class="game-meta">
+        Insomniac Games • Action / Adventure • PS5 Exclusive
+      </div>
+    </div>
+    <div class="game-date">Sep 15, 2026</div>
+  </div>
+
+  <!-- Game 2 -->
+  <div class="game-row">
+    <div class="game-platform">PC / Console</div>
+    <div class="game-info">
+      <h3>
+        <a
+          href="https://www.ign.com/games/the-witcher-4-polaris"
+          target="_blank"
+          rel="noopener"
+          >The Witcher 4</a
+        >
+        <span class="badge badge-tba">TBA</span>
+      </h3>
+      <div class="game-meta">
+        CD Projekt Red • Action RPG • Unreal Engine 5 • Ciri protagonist
+      </div>
+    </div>
+    <div class="game-date">TBA 2026</div>
+  </div>
+
+  <!-- Game 3 -->
+  <div class="game-row">
+    <div class="game-platform">Xbox / PC / PS5</div>
+    <div class="game-info">
+      <h3>
+        <a
+          href="https://www.ign.com/games/fable-2026"
+          target="_blank"
+          rel="noopener"
+          >Fable</a
+        >
+        <span class="badge badge-rumoured">Rumoured delay</span>
+      </h3>
+      <div class="game-meta">
+        Playground Games • Action RPG • 1,000 handcrafted NPCs
+      </div>
+    </div>
+    <div class="game-date">Q4 2026</div>
+  </div>
+
+  <div class="sources-section">
+    <h2>Sources</h2>
+    <table class="sources-table">
+      <thead>
+        <tr>
+          <th>Source</th>
+          <th>URL</th>
+          <th>Accessed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>IGN</td>
+          <td>
+            <a href="https://www.ign.com/" target="_blank" rel="noopener"
+              >https://www.ign.com/</a
+            >
+          </td>
+          <td>2026-04-28</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="updated-note">Last updated: 28 Apr 2026 · Tracked by LoomBot</p>
+</div>

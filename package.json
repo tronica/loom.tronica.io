@@ -1,0 +1,16 @@
+{
+  "name": "loom.tronica.io",
+  "version": "1.0.0",
+  "description": "Personal knowledge base site",
+  "scripts": {
+    "build": "eleventy && pagefind --site _site",
+    "dev": "eleventy --serve --quiet"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "markdown-it": "^14.1.0"
+  },
+  "devDependencies": {
+    "pagefind": "^1.3.0"
+  }
+}

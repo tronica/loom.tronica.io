@@ -1,0 +1,103 @@
+---
+layout: base.html
+page_layout: home
+eleventyExcludeFromCollections: true
+---
+
+{% set featured = collections.featured %}
+{% set nonFeatured = collections.nonFeatured %}
+{% set latest = nonFeatured | first %}
+
+<section class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-top">
+      <span class="masthead-prompt">
+        <span class="masthead-prompt-ps1">user@loom:~$</span>
+        <span class="masthead-prompt-cmd">loom</span>
+        <span class="masthead-prompt-arg">--describe</span>
+      </span>
+      <span>{{ collections.recent | length }} pages indexed</span>
+    </div>
+    <div class="masthead-flag">
+      <h1 class="masthead-name nav-brand-title">loom</h1>
+      <p class="masthead-tagline">Automated knowledge base, by Tronica.io</p>
+    </div>
+  </div>
+</section>
+
+<div class="home-body">
+  <div>
+    {% if featured | length %}
+    <div class="feed-label">featured</div>
+    <div class="feed">
+      {% for item in featured %}
+        {% set sec = item.url | section %}
+        <a href="{{ item.url }}" class="card card-featured">
+          <div class="card-header">
+            <span class="card-header-section">{{ sec if sec else 'root' }}</span>
+            <span class="card-header-sep">&nbsp;·&nbsp;</span>
+            {{ item.date | dateISO }}
+          </div>
+          <div class="card-title">{{ item.data.title }}</div>
+          {% set preview = item.data.excerpt or (item.templateContent | excerpt) %}
+          {% if preview %}<div class="card-preview">{{ preview }}</div>{% endif %}
+          <div class="card-footer">
+            <span>{{ item.date | dateFormat }}</span>
+            <span class="card-featured-badge">★ featured</span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="feed-label">recently updated</div>
+
+
+
+    {% if latest %}
+      {% set latestSec = latest.url | section %}
+      <a href="{{ latest.url }}" class="card-lead">
+        <div class="card-header">
+          <span class="card-header-section">{{ latestSec if latestSec else 'root' }}</span>
+          <span class="card-header-sep">&nbsp;·&nbsp;</span>
+          {{ latest.date | dateISO }}
+        </div>
+        <div class="card-title">{{ latest.data.title }}</div>
+        {% set leadPreview = latest.data.excerpt or (latest.templateContent | excerpt) %}
+        {% if leadPreview %}<div class="card-preview">{{ leadPreview }}</div>{% endif %}
+        <div class="card-footer">
+          <span>{{ latest.date | dateFormat }}</span>
+          {% if latest.data.agent_task %}
+            <span class="card-agent">⚡ {{ latest.data.agent_task }}</span>
+          {% endif %}
+        </div>
+      </a>
+    {% endif %}
+
+    <div class="feed">
+      {% for item in nonFeatured %}
+        {% if not loop.first %}
+          {% set sec = item.url | section %}
+          <a href="{{ item.url }}" class="card">
+            <div class="card-header">
+              <span class="card-header-section">{{ sec if sec else 'root' }}</span>
+              <span class="card-header-sep">&nbsp;·&nbsp;</span>
+              {{ item.date | dateISO }}
+            </div>
+            <div class="card-title">{{ item.data.title }}</div>
+            {% set preview = item.data.excerpt or (item.templateContent | excerpt) %}
+            {% if preview %}<div class="card-preview">{{ preview }}</div>{% endif %}
+            <div class="card-footer">
+              <span>{{ item.date | dateFormat }}</span>
+              {% if item.data.agent_task %}
+                <span class="card-agent">⚡ {{ item.data.agent_task }}</span>
+              {% endif %}
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  </div>
+
+</div>
