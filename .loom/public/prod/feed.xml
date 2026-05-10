@@ -237,7 +237,7 @@
 &lt;div class=&quot;games-container&quot;&gt;
   &lt;div class=&quot;games-masthead&quot;&gt;
     &lt;h1&gt;Games Tracker&lt;/h1&gt;
-    &lt;p class=&quot;games-subtitle&quot;&gt;Upcoming 2026 Releases — Last updated: 29 Apr 2026&lt;/p&gt;
+    &lt;p class=&quot;games-subtitle&quot;&gt;Upcoming 2026 Releases — Last updated: 16 May 2026&lt;/p&gt;
   &lt;/div&gt;
 
   &lt;div class=&quot;games-grid&quot;&gt;
@@ -254,10 +254,10 @@
       &lt;div class=&quot;game-meta&quot;&gt;
         &lt;span class=&quot;badge badge-ps5&quot;&gt;PS5&lt;/span&gt;
         &lt;span class=&quot;badge badge-confirmed&quot;&gt;Confirmed&lt;/span&gt;
-        &lt;span class=&quot;release-badge&quot;&gt;Fall 2026&lt;/span&gt;
+        &lt;span class=&quot;release-badge&quot;&gt;Sep 15, 2026&lt;/span&gt;
       &lt;/div&gt;
       &lt;p class=&quot;game-description&quot;&gt;
-        Insomniac Games • Action / Adventure • PS5 Exclusive • State of Play Sep 24, 2025 confirmed
+        Insomniac Games • Action / Adventure • PS5 Exclusive • Officially announced Sep 15, 2026
       &lt;/p&gt;
     &lt;/div&gt;
 
@@ -274,10 +274,11 @@
       &lt;div class=&quot;game-meta&quot;&gt;
         &lt;span class=&quot;badge badge-pc&quot;&gt;PC&lt;/span&gt;
         &lt;span class=&quot;badge badge-ps5&quot;&gt;PS5&lt;/span&gt;
-        &lt;span class=&quot;release-badge&quot;&gt;TBA 2026&lt;/span&gt;
+        &lt;span class=&quot;badge badge-delayed&quot;&gt;Delayed&lt;/span&gt;
+        &lt;span class=&quot;release-badge&quot;&gt;2027&lt;/span&gt;
       &lt;/div&gt;
       &lt;p class=&quot;game-description&quot;&gt;
-        CD Projekt Red • Action RPG • Unreal Engine 5 • Ciri as protagonist
+        CD Projekt Red • Action RPG • Unreal Engine 5 • Ciri as protagonist • Officially delayed beyond 2026
       &lt;/p&gt;
     &lt;/div&gt;
 
@@ -295,11 +296,11 @@
         &lt;span class=&quot;badge badge-xbox&quot;&gt;Xbox&lt;/span&gt;
         &lt;span class=&quot;badge badge-pc&quot;&gt;PC&lt;/span&gt;
         &lt;span class=&quot;badge badge-ps5&quot;&gt;PS5&lt;/span&gt;
-        &lt;span class=&quot;badge badge-rumoured&quot;&gt;Rumoured&lt;/span&gt;
-        &lt;span class=&quot;release-badge&quot;&gt;Q4 2026&lt;/span&gt;
+        &lt;span class=&quot;badge badge-confirmed&quot;&gt;Confirmed&lt;/span&gt;
+        &lt;span class=&quot;release-badge&quot;&gt;Autumn 2026&lt;/span&gt;
       &lt;/div&gt;
       &lt;p class=&quot;game-description&quot;&gt;
-        Playground Games • Action RPG • 1,000 handcrafted NPCs
+        Playground Games • Action RPG • 1,000 handcrafted NPCs • Confirmed for Autumn 2026 • Xbox Game Pass at launch
       &lt;/p&gt;
     &lt;/div&gt;
 
@@ -320,6 +321,34 @@
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://www.techradar.com/news/marvels-wolverine&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;TechRadar Wolverine Coverage&lt;/a&gt;
         &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-04-29&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://www.marvel.com/articles/games/marvels-wolverine-gameplay-trailer-playstation-state-of-play-2025&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Marvel Official - Wolverine Sep 15, 2026&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-10&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://www.pcgamesn.com/the-witcher-4/the-witcher-4-release-date-system-requirements-news-trailer-story-everything-we-know&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PCGamesN - Witcher 4 Delayed to 2027&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-10&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://www.xbox.com/en-US/games/fable&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Xbox Official - Fable Autumn 2026&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-16&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://www.ign.com/articles/fable-social-media-account-reiterates-fall-2026-release-window-amid-rumors-of-an-internal-delay-to-avoid-gta-6&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IGN - Fable Fall 2026 Confirmation&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-16&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://www.eurogamer.net/fable-still-coming-autumn-2026&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Eurogamer - Fable Autumn 2026 Confirmation&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-16&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://www.primetimer.com/news/insomniac-games-sets-marvel-s-wolverine-release-date-for-september-2026&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PrimeTimer - Wolverine Sep 15, 2026&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-16&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://www.gosugamers.net/entertainment/news/74578-cd-projekt-red-the-witcher-4-won-t-launch-before-2027-other-projects-in-early-development&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GosuGamers - Witcher 4 Not Before 2027&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-16&lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
