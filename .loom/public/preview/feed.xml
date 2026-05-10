@@ -7,6 +7,386 @@
     <atom:link href="https://loom.tronica.io/feed.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Best Open Source Models</title>
+      <link>https://loom.tronica.io/media/best-open-source-models/</link>
+      <pubDate>2026-05-10</pubDate>
+      <guid isPermaLink="true">https://loom.tronica.io/media/best-open-source-models/</guid>
+      <description>
+&lt;style&gt;
+  .models-container {
+    max-width: var(--wide-w);
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .models-masthead {
+    margin-bottom: 2rem;
+  }
+
+  .models-masthead h1 {
+    font-size: 2.2rem;
+    color: var(--mauve);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+    font-family: &quot;Bitcount Grid Double&quot;, monospace, sans-serif;
+  }
+
+  .models-masthead h1::before {
+    content: &quot;~/media/&quot;;
+    color: var(--text-3);
+    font-family: var(--font);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    margin-right: 0.5rem;
+  }
+
+  .models-subtitle {
+    color: var(--text-3);
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+
+  .ranking-table-container {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+  }
+
+  .ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-2);
+    border: 1px solid var(--border-hi);
+  }
+
+  .ranking-table th {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface-2);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-2);
+    font-weight: 600;
+  }
+
+  .ranking-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--text);
+  }
+
+  .ranking-table tr:hover {
+    background: var(--surface);
+  }
+
+  .rank-cell {
+    width: 50px;
+    font-weight: 700;
+    color: var(--mauve);
+    font-size: 1.1rem;
+  }
+
+  .model-cell {
+    font-weight: 600;
+  }
+
+  .model-cell a {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .model-cell a:hover {
+    color: var(--mauve);
+    text-decoration: underline;
+  }
+
+  .provider-cell {
+    color: var(--text-2);
+    font-size: 0.8rem;
+  }
+
+  .score-cell {
+    font-weight: 600;
+    color: var(--green);
+  }
+
+  .category-cell {
+    font-size: 0.75rem;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid var(--border-hi);
+    background: var(--surface-2);
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-2);
+    margin-right: 0.4rem;
+  }
+
+  .badge-llm { border-color: var(--blue); color: var(--blue); }
+  .badge-vision { border-color: var(--green); color: var(--green); }
+  .badge-multimodal { border-color: var(--peach); color: var(--peach); }
+  .badge-audio { border-color: var(--purple); color: var(--purple); }
+  .badge-code { border-color: var(--yellow); color: var(--yellow); }
+
+  .last-updated-cell {
+    color: var(--text-3);
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+
+  .notes-cell {
+    font-size: 0.75rem;
+    color: var(--text-2);
+  }
+
+  .sources-panel {
+    margin-top: 2rem;
+  }
+
+  .sources-panel-title {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    left: 1rem;
+    padding: 0 0.4rem;
+    background: var(--bg);
+    font-size: 0.72rem;
+    color: var(--text-3);
+    white-space: nowrap;
+  }
+
+  .sources-panel-title .hi {
+    color: var(--blue);
+  }
+
+  .sources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.75rem;
+    padding-top: 0.75rem;
+  }
+
+  .source-item {
+    padding: 0.65rem 0.85rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .source-item:last-child {
+    border-bottom: none;
+  }
+
+  .source-item a {
+    color: var(--cyan);
+    text-decoration: none;
+    font-size: 0.8rem;
+    word-break: break-all;
+    display: block;
+  }
+
+  .source-item a:hover {
+    color: var(--mauve);
+    text-decoration: underline;
+  }
+
+  .source-meta {
+    font-size: 0.7rem;
+    color: var(--text-3);
+    margin-top: 0.2rem;
+  }
+
+  .updated-note {
+    font-size: 0.75rem;
+    color: var(--text-3);
+    margin-top: 1.5rem;
+    text-align: center;
+    font-style: italic;
+  }
+
+  .methodology {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--text-2);
+    line-height: 1.6;
+  }
+
+  .methodology-title {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .models-container {
+      padding: 1.5rem 1rem;
+    }
+    .models-masthead h1 {
+      font-size: 1.6rem;
+    }
+    .ranking-table th,
+    .ranking-table td {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.75rem;
+    }
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;models-container&quot;&gt;
+  &lt;div class=&quot;models-masthead&quot;&gt;
+    &lt;h1&gt;Best Open Source Models&lt;/h1&gt;
+    &lt;p class=&quot;models-subtitle&quot;&gt;Weekly ranking — Last updated: 2026-05-10&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;ranking-table-container&quot;&gt;
+    &lt;table class=&quot;ranking-table&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Rank&lt;/th&gt;
+          &lt;th&gt;Model&lt;/th&gt;
+          &lt;th&gt;Provider&lt;/th&gt;
+          &lt;th&gt;Category&lt;/th&gt;
+          &lt;th&gt;Score&lt;/th&gt;
+          &lt;th&gt;Last Updated&lt;/th&gt;
+          &lt;th&gt;Notes&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;rank-cell&quot;&gt;1&lt;/td&gt;
+          &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://huggingface.co/Qwen/Qwen3-235B-A22B&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Qwen3-235B-A22B&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;provider-cell&quot;&gt;Alibaba Cloud&lt;/td&gt;
+          &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;94.2%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-08&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;SOTA on MT-Bench, Arena Hard&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;rank-cell&quot;&gt;2&lt;/td&gt;
+          &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://huggingface.co/01-ai/Yi-1.5-34B&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Yi-1.5-34B&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;provider-cell&quot;&gt;01.AI&lt;/td&gt;
+          &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;93.8%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-05&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;Excellent reasoning, open weights&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;rank-cell&quot;&gt;3&lt;/td&gt;
+          &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://huggingface.co/mistralai/Mistral-Nemo-12B&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mistral Nemo 12B&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;provider-cell&quot;&gt;Mistral AI&lt;/td&gt;
+          &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;93.5%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-07&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;Compact, high performance&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;rank-cell&quot;&gt;4&lt;/td&gt;
+          &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://huggingface.co/google/gemma-2-27b&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Gemma 2 27B&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;provider-cell&quot;&gt;Google&lt;/td&gt;
+          &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;92.9%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-04-28&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;Google&#39;s latest open model&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;rank-cell&quot;&gt;5&lt;/td&gt;
+          &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://huggingface.co/llava-hf/llava-v1.6-mistral-7b&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LLaVA-1.6-Mistral-7B&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;provider-cell&quot;&gt;LLaVA Team&lt;/td&gt;
+          &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-vision&quot;&gt;Vision&lt;/span&gt;&lt;span class=&quot;badge badge-multimodal&quot;&gt;Multimodal&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;91.5%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-01&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;Leading vision-language model&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;rank-cell&quot;&gt;6&lt;/td&gt;
+          &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://huggingface.co/CohereForAI/c4ai-command-r-v01-4b&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Command R+ 4B&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;provider-cell&quot;&gt;Cohere&lt;/td&gt;
+          &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;90.8%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-03&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;Commercial-friendly license&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;rank-cell&quot;&gt;7&lt;/td&gt;
+          &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Llama 3.1 70B&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;provider-cell&quot;&gt;Meta&lt;/td&gt;
+          &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;90.2%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-04-15&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;Broad ecosystem adoption&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;rank-cell&quot;&gt;8&lt;/td&gt;
+          &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://huggingface.co/Baaai/HunYuanDiT-7B&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HunYuanDiT-7B&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;provider-cell&quot;&gt;Tencent&lt;/td&gt;
+          &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-vision&quot;&gt;Vision&lt;/span&gt;&lt;span class=&quot;badge badge-multimodal&quot;&gt;Multimodal&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;89.7%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-06&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;Text-to-image, open weights&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;rank-cell&quot;&gt;9&lt;/td&gt;
+          &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://huggingface.co/microsoft/Phi-3.5-mini-instruct&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Phi-3.5-mini&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;provider-cell&quot;&gt;Microsoft&lt;/td&gt;
+          &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;span class=&quot;badge badge-code&quot;&gt;Code&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;89.1%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-09&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;Strong on code &amp; math&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;rank-cell&quot;&gt;10&lt;/td&gt;
+          &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://huggingface.co/openchat/openchat-3.6-8b&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OpenChat 3.6 8B&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;provider-cell&quot;&gt;OpenChat&lt;/td&gt;
+          &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;88.5%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-04-25&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;Optimized for conversation&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;methodology&quot;&gt;
+    &lt;div class=&quot;methodology-title&quot;&gt;Methodology&lt;/div&gt;
+    &lt;p&gt;Rankings are based on aggregated scores from LMSYS Arena, Hugging Face Open LLM Leaderboard, and community benchmarks (MT-Bench, AlpacaEval, Arena Hard). Scores are normalized to a 0-100% scale. Models must have open weights (Apache 2.0, MIT, or similar permissive licenses) to qualify.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;sources-panel panel&quot;&gt;
+    &lt;div class=&quot;sources-panel-title&quot;&gt;─[ &lt;span class=&quot;hi&quot;&gt;Sources&lt;/span&gt; ]─&lt;/div&gt;
+    &lt;div class=&quot;sources-grid&quot;&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://lmsys.org/leaderboard/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LMSYS Chatbot Arena Leaderboard&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-10&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hugging Face Open LLM Leaderboard&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-10&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://github.com/lm-sys/FastChat&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;FastChat (MT-Bench, Arena Hard)&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-10&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://paperswithcode.com/leaderboard&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Papers with Code - LLM Benchmarks&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-10&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;p class=&quot;updated-note&quot;&gt;Updated weekly via automated web search — Next update: 2026-05-17&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Games Tracker</title>
       <link>https://loom.tronica.io/media/2026-04-28-upcoming-games-2026/</link>
       <pubDate>2026-04-28</pubDate>
