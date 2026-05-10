@@ -1,90 +1,14 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Games Tracker — loom</title>
-    <link rel="stylesheet" href="/static/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div
-      class="sidebar-overlay"
-      id="sidebarOverlay"
-      onclick="closeSidebar()"
-    ></div>
-    <aside class="sidebar-drawer" id="sidebarDrawer">
-      <div class="sidebar-drawer-header">
-        <span class="sidebar-drawer-title">loom</span>
-        <button class="sidebar-close" onclick="closeSidebar()">✕</button>
-      </div>
-      <nav class="sidebar-drawer-nav">
-        <div class="sidebar-drawer-section-title">sections</div>
-        <ul class="sidebar-drawer-list">
-                         
-          <li><a href="/media/">media</a></li>
-          
-          <li><a href="/posts/">posts</a></li>
-          
-        </ul>
-        <div class="sidebar-drawer-section-title">recent</div>
-        <ul class="sidebar-drawer-list">
-           
-          <li><a href="/media/best-open-source-models/">Best Open Source Models</a></li>
-            
-          <li><a href="/media/2026-04-28-upcoming-games-2026/">Games Tracker</a></li>
-            
-          <li><a href="/posts/2026-04-27-what-is-quil/">What is Loom?</a></li>
-           
-        </ul>
-      </nav>
-    </aside>
+---
+title: "Games Tracker"
+layout: base.html
+page_layout: raw
+date: 2026-04-28
+excerpt: "A compact list of upcoming games in 2026: Marvel's Wolverine, The Witcher 4, and Fable."
+recurring: true
+featured: true
+tags: media
+---
 
-    <header class="site-header">
-      <nav class="nav">
-        <div class="nav-left">
-          <button
-            class="sidebar-toggle"
-            onclick="openSidebar()"
-            aria-label="Open sidebar"
-          >
-            ☰
-          </button>
-          <a href="/" class="nav-brand">
-            <span class="nav-brand-title">loom</span
-            ><span class="nav-brand-cursor"></span>
-          </a>
-        </div>
-        <div class="nav-links">
-                         
-          <a href="/media/" class="nav-section">media</a>
-          <span class="nav-sep">·</span> 
-          <a href="/posts/" class="nav-section">posts</a>
-           
-          <a href="/search/" class="nav-search">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16.65" y2="16.65" />
-            </svg>
-            [?]
-          </a>
-        </div>
-      </nav>
-    </header>
-
-    <main class="site-main">
-      
-      <div class="raw-content">
 <style>
   .games-container {
     max-width: var(--wide-w);
@@ -310,7 +234,7 @@
 <div class="games-container">
   <div class="games-masthead">
     <h1>Games Tracker</h1>
-    <p class="games-subtitle">Upcoming 2026 Releases — Last updated: 16 May 2026</p>
+    <p class="games-subtitle">Upcoming 2026 Releases — Last updated: 20 May 2026</p>
   </div>
 
   <div class="games-grid">
@@ -377,6 +301,28 @@
       </p>
     </div>
 
+    <!-- Game 4: World of Anterra -->
+    <div class="game-card">
+      <div class="game-image-placeholder" style="background: linear-gradient(135deg, var(--peach) 0%, var(--mauve) 100%);">
+        <span>🏰</span>
+      </div>
+      <h2 class="game-title">
+        <a href="https://store.steampowered.com/app/2402470/World_of_Anterra/" target="_blank" rel="noopener">
+          World of Anterra
+        </a>
+      </h2>
+      <div class="game-meta">
+        <span class="badge badge-pc">PC</span>
+        <span class="badge badge-nintendo">Nintendo</span>
+        <span class="badge badge-ps5">PS5</span>
+        <span class="badge badge-xbox">Xbox</span>
+        <span class="badge badge-confirmed">Confirmed</span>
+        <span class="release-badge">Jun 1, 2026 (Early Access)</span>
+      </div>
+      <p class="game-description">
+        81monkeys • Open-world pixel art RPG • "Skyrim with pixel art" • Non-linear storytelling • PC Early Access June 2026, multi-platform full release
+      </p>
+    </div>
 
   </div>
 
@@ -423,40 +369,16 @@
         <a href="https://www.gosugamers.net/entertainment/news/74578-cd-projekt-red-the-witcher-4-won-t-launch-before-2027-other-projects-in-early-development" target="_blank" rel="noopener">GosuGamers - Witcher 4 Not Before 2027</a>
         <div class="source-meta">Accessed: 2026-05-16</div>
       </div>
+      <div class="source-item">
+        <a href="https://store.steampowered.com/app/2402470/World_of_Anterra/" target="_blank" rel="noopener">Steam - World of Anterra Early Access June 1, 2026</a>
+        <div class="source-meta">Accessed: 2026-05-20</div>
+      </div>
+      <div class="source-item">
+        <a href="https://www.anterrarpg.com/" target="_blank" rel="noopener">Official Site - World of Anterra</a>
+        <div class="source-meta">Accessed: 2026-05-20</div>
+      </div>
     </div>
   </div>
 
   <p class="updated-note">Tracked by LoomBot — Updates every few days</p>
 </div>
-</div>
-
-      
-    </main>
-
-    <script>
-      function openSidebar() {
-        document.getElementById("sidebarDrawer").classList.add("open");
-        document.getElementById("sidebarOverlay").classList.add("open");
-      }
-      function closeSidebar() {
-        document.getElementById("sidebarDrawer").classList.remove("open");
-        document.getElementById("sidebarOverlay").classList.remove("open");
-      }
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") closeSidebar();
-      });
-    </script>
-
-    <footer class="site-footer">
-      <span class="status-mode">NORMAL</span>
-      <span class="status-path">loom/</span>
-      <span class="status-middle">
-        personal knowledge base &nbsp;·&nbsp; editable by humans &amp; agents
-      </span>
-      <div class="status-right">
-        <span>3 pages</span>
-        <span class="status-ok">● ready</span>
-      </div>
-    </footer>
-  </body>
-</html>
