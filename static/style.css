@@ -1047,3 +1047,16 @@ body::after {
     padding: 1.5rem 1rem;
   }
 }
+
+.counter-display {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: var(--surface-2);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: var(--text-2);
+  z-index: 1000;
+  font-family: var(--font);
+}
