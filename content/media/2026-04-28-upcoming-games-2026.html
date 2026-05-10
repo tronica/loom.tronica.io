@@ -10,109 +10,135 @@ tags: media
 ---
 
 <style>
-  .games-hub {
-    max-width: 1000px;
+  .games-news {
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    background: #0a0a0f;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #08080c;
     color: #e0e0e0;
   }
 
-  .games-hub-header {
+  .games-header {
     text-align: center;
     padding: 2rem 0;
-    border-bottom: 2px solid #222;
     margin-bottom: 2rem;
   }
 
-  .games-hub-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
+  .games-header h1 {
+    font-size: 2.8rem;
+    margin: 0 0 0.5rem;
     color: #fff;
-    text-shadow: 0 0 20px rgba(255, 50, 50, 0.3);
-    letter-spacing: 0.1em;
+    text-shadow: 0 0 30px rgba(255, 80, 80, 0.4);
+    letter-spacing: 0.15em;
+    font-weight: 700;
   }
 
-  .games-hub-subtitle {
-    color: #888;
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
+  .games-subtitle {
+    color: #777;
+    font-size: 1rem;
+    margin: 0;
   }
 
   .games-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.5rem;
   }
 
-  .game-card {
-    background: #12121a;
-    border: 1px solid #222;
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: all 0.3s ease;
-    position: relative;
+  .game-tile {
+    background: linear-gradient(135deg, #12121a 0%, #1a1a24 100%);
+    border: 1px solid #1f1f2e;
+    border-radius: 12px;
     overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
   }
 
-  .game-card::before {
+  .game-tile::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #ff3333, #ff6633, #ffcc33);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,50,50,0.05) 0%, rgba(50,100,255,0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
   }
 
-  .game-card:hover {
-    border-color: #444;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  .game-tile:hover {
+    transform: translateY(-4px);
+    border-color: #333;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
   }
 
-  .game-card:hover::before {
-    transform: scaleX(1);
+  .game-tile:hover::before {
+    opacity: 1;
   }
 
-  .game-card-header {
+  .game-image {
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .game-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.8) 100%);
+  }
+
+  .game-image-placeholder {
+    height: 160px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    font-size: 4rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.1);
+  }
+
+  .game-content {
+    padding: 1.25rem;
   }
 
   .game-title {
-    font-size: 1.3rem;
-    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem;
     color: #fff;
+    line-height: 1.3;
   }
 
   .game-title a {
     color: inherit;
     text-decoration: none;
+    transition: color 0.2s ease;
   }
 
   .game-title a:hover {
     color: #ff4444;
   }
 
-  .game-badges {
+  .game-meta {
     display: flex;
-    gap: 0.5rem;
     flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
   }
 
   .badge {
     display: inline-block;
     padding: 0.25rem 0.6rem;
     border-radius: 4px;
-    font-size: 0.7rem;
-    font-weight: 600;
+    font-size: 0.65rem;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
@@ -120,249 +146,216 @@ tags: media
   .badge-ps5 { background: #003087; color: #fff; }
   .badge-pc { background: #4a4a4a; color: #fff; }
   .badge-xbox { background: #107c10; color: #fff; }
+  .badge-nintendo { background: #e60012; color: #fff; }
   .badge-confirmed { background: #00aa44; color: #fff; }
   .badge-tba { background: #aa7700; color: #fff; }
   .badge-rumoured { background: #883300; color: #fff; }
-  .badge-fall { background: #663300; color: #ffaa66; }
-  .badge-q4 { background: #333366; color: #aaaaff; }
-
-  .game-platform {
-    font-size: 0.75rem;
-    color: #666;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
+  .badge-delayed { background: #cc4400; color: #fff; }
 
   .game-release {
-    font-size: 0.85rem;
-    color: #aaa;
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
   }
 
-  .game-details {
+  .release-upcoming {
+    background: #1a3a5c;
+    color: #64b5f6;
+  }
+
+  .release-released {
+    background: #1a4a2a;
+    color: #66bb6a;
+  }
+
+  .release-tba {
+    background: #4a3a1a;
+    color: #ffb74d;
+  }
+
+  .game-description {
     font-size: 0.85rem;
     color: #888;
-    line-height: 1.6;
-    margin: 1rem 0;
-  }
-
-  .progress-container {
-    margin-top: 1.25rem;
-    padding-top: 1rem;
-    border-top: 1px solid #222;
-  }
-
-  .progress-label {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-    font-size: 0.75rem;
-    color: #aaa;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-
-  .progress-bar-wrapper {
-    height: 8px;
-    background: #1a1a22;
-    border-radius: 4px;
-    overflow: hidden;
-  }
-
-  .progress-bar {
-    height: 100%;
-    border-radius: 4px;
-    transition: width 0.5s ease;
-  }
-
-  .progress-bar.fill-30 { width: 30%; background: linear-gradient(90deg, #ff4444, #ff6644); }
-  .progress-bar.fill-60 { width: 60%; background: linear-gradient(90deg, #ffaa44, #ffcc44); }
-  .progress-bar.fill-80 { width: 80%; background: linear-gradient(90deg, #44ff44, #66ff66); }
-
-  .progress-text {
-    text-align: right;
-    font-size: 0.75rem;
-    color: #666;
-    margin-top: 0.25rem;
+    line-height: 1.5;
+    margin: 0;
   }
 
   .sources-section {
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 1px solid #222;
+    border-top: 1px solid #1f1f2e;
   }
 
   .sources-section h2 {
-    font-size: 1.2rem;
-    color: #fff;
-    margin-bottom: 1rem;
-  }
-
-  .sources-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.85rem;
-  }
-
-  .sources-table th,
-  .sources-table td {
-    text-align: left;
-    padding: 0.75rem;
-    border-bottom: 1px solid #222;
-  }
-
-  .sources-table th {
-    font-weight: 600;
+    font-size: 1.1rem;
     color: #aaa;
+    margin-bottom: 1rem;
     text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
   }
 
-  .sources-table a {
+  .sources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .source-item {
+    padding: 1rem;
+    background: #12121a;
+    border: 1px solid #222;
+    border-radius: 8px;
+  }
+
+  .source-item a {
     color: #ff4444;
     text-decoration: none;
+    font-size: 0.9rem;
+    word-break: break-all;
   }
 
-  .sources-table a:hover {
+  .source-item a:hover {
     text-decoration: underline;
+  }
+
+  .source-meta {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 0.25rem;
   }
 
   .updated-note {
     font-size: 0.8rem;
-    color: #666;
+    color: #555;
     margin-top: 2rem;
     text-align: center;
   }
+
+  @media (max-width: 768px) {
+    .games-grid {
+      grid-template-columns: 1fr;
+    }
+    .games-header h1 {
+      font-size: 2rem;
+    }
+  }
 </style>
 
-<div class="games-hub">
-  <div class="games-hub-header">
+<div class="games-news">
+  <div class="games-header">
     <h1>GAMES TRACKER</h1>
-    <p class="games-hub-subtitle">Upcoming 2026 Releases — Last updated: 29 Apr 2026</p>
+    <p class="games-subtitle">Upcoming 2026 Releases — Last updated: 29 Apr 2026</p>
   </div>
 
   <div class="games-grid">
     <!-- Game 1: Marvel's Wolverine -->
-    <div class="game-card">
-      <div class="game-card-header">
+    <div class="game-tile">
+      <div class="game-image-placeholder" style="background: linear-gradient(135deg, #8b0000 0%, #4b0082 100%);">
+        <span>🎮</span>
+      </div>
+      <div class="game-content">
         <h2 class="game-title">
           <a href="https://www.ign.com/games/marvels-wolverine" target="_blank" rel="noopener">
             Marvel's Wolverine
           </a>
         </h2>
-        <div class="game-badges">
+        <div class="game-meta">
           <span class="badge badge-ps5">PS5</span>
           <span class="badge badge-confirmed">Confirmed</span>
-          <span class="badge badge-fall">Fall 2026</span>
+          <span class="release release-upcoming">Fall 2026</span>
         </div>
-      </div>
-      <div class="game-details">
-        Insomniac Games • Action / Adventure • PS5 Exclusive • State of Play Sep 24, 2025 confirmed
-      </div>
-      <div class="progress-container">
-        <div class="progress-label">
-          <span>Release Progress</span>
-        </div>
-        <div class="progress-bar-wrapper">
-          <div class="progress-bar fill-60"></div>
-        </div>
-        <div class="progress-text">60% to Fall 2026</div>
+        <p class="game-description">
+          Insomniac Games • Action / Adventure • PS5 Exclusive • State of Play Sep 24, 2025 confirmed
+        </p>
       </div>
     </div>
 
     <!-- Game 2: The Witcher 4 -->
-    <div class="game-card">
-      <div class="game-card-header">
+    <div class="game-tile">
+      <div class="game-image-placeholder" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+        <span>⚔️</span>
+      </div>
+      <div class="game-content">
         <h2 class="game-title">
           <a href="https://www.ign.com/games/the-witcher-4-polaris" target="_blank" rel="noopener">
-            The Witcher 4
+            The Witcher 4: Polaris
           </a>
         </h2>
-        <div class="game-badges">
+        <div class="game-meta">
           <span class="badge badge-pc">PC</span>
           <span class="badge badge-ps5">PS5</span>
-          <span class="badge badge-tba">TBA 2026</span>
+          <span class="release release-tba">TBA 2026</span>
         </div>
-      </div>
-      <div class="game-details">
-        CD Projekt Red • Action RPG • Unreal Engine 5 • Ciri as protagonist
-      </div>
-      <div class="progress-container">
-        <div class="progress-label">
-          <span>Release Progress</span>
-        </div>
-        <div class="progress-bar-wrapper">
-          <div class="progress-bar fill-30"></div>
-        </div>
-        <div class="progress-text">30% to 2026</div>
+        <p class="game-description">
+          CD Projekt Red • Action RPG • Unreal Engine 5 • Ciri as protagonist
+        </p>
       </div>
     </div>
 
     <!-- Game 3: Fable -->
-    <div class="game-card">
-      <div class="game-card-header">
+    <div class="game-tile">
+      <div class="game-image-placeholder" style="background: linear-gradient(135deg, #004d40 0%, #00796b 100%);">
+        <span>★</span>
+      </div>
+      <div class="game-content">
         <h2 class="game-title">
           <a href="https://www.ign.com/games/fable-2026" target="_blank" rel="noopener">
             Fable
           </a>
         </h2>
-        <div class="game-badges">
+        <div class="game-meta">
           <span class="badge badge-xbox">Xbox</span>
           <span class="badge badge-pc">PC</span>
           <span class="badge badge-ps5">PS5</span>
-          <span class="badge badge-rumoured">Rumoured Delay</span>
-          <span class="badge badge-q4">Q4 2026</span>
+          <span class="badge badge-rumoured">Rumoured</span>
+          <span class="release release-upcoming">Q4 2026</span>
         </div>
+        <p class="game-description">
+          Playground Games • Action RPG • 1,000 handcrafted NPCs
+        </p>
       </div>
-      <div class="game-details">
-        Playground Games • Action RPG • 1,000 handcrafted NPCs
+    </div>
+
+    <!-- Game 4: Example Released Game -->
+    <div class="game-tile">
+      <div class="game-image-placeholder" style="background: linear-gradient(135deg, #00695c 0%, #26a69a 100%);">
+        <span>🏆</span>
       </div>
-      <div class="progress-container">
-        <div class="progress-label">
-          <span>Release Progress</span>
+      <div class="game-content">
+        <h2 class="game-title">
+          <a href="https://example.com" target="_blank" rel="noopener">
+            Example Game 2025
+          </a>
+        </h2>
+        <div class="game-meta">
+          <span class="badge badge-ps5">PS5</span>
+          <span class="release release-released">RELEASED</span>
         </div>
-        <div class="progress-bar-wrapper">
-          <div class="progress-bar fill-80"></div>
-        </div>
-        <div class="progress-text">80% to Q4 2026</div>
+        <p class="game-description">
+          Studio Name • Genre • Already released in 2025
+        </p>
       </div>
     </div>
   </div>
 
   <div class="sources-section">
-    <h2>SOURCES</h2>
-    <table class="sources-table">
-      <thead>
-        <tr>
-          <th>Source</th>
-          <th>URL</th>
-          <th>Accessed</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>IGN</td>
-          <td>
-            <a href="https://www.ign.com/" target="_blank" rel="noopener">https://www.ign.com/</a>
-          </td>
-          <td>2026-04-29</td>
-        </tr>
-        <tr>
-          <td>PlayStation Blog</td>
-          <td>
-            <a href="https://blog.playstation.com/2025/09/24/marvels-wolverine-arrives-on-playstation-5-fall-2026/" target="_blank" rel="noopener">Wolverine Fall 2026 Announcement</a>
-          </td>
-          <td>2026-04-29</td>
-        </tr>
-        <tr>
-          <td>TechRadar</td>
-          <td>
-            <a href="https://www.techradar.com/news/marvels-wolverine" target="_blank" rel="noopener">TechRadar Wolverine Coverage</a>
-          </td>
-          <td>2026-04-29</td>
-        </tr>
-      </tbody>
-    </table>
+    <h2>Sources</h2>
+    <div class="sources-grid">
+      <div class="source-item">
+        <a href="https://www.ign.com/" target="_blank" rel="noopener">IGN</a>
+        <div class="source-meta">Accessed: 2026-04-29</div>
+      </div>
+      <div class="source-item">
+        <a href="https://blog.playstation.com/2025/09/24/marvels-wolverine-arrives-on-playstation-5-fall-2026/" target="_blank" rel="noopener">PlayStation Blog - Wolverine Announcement</a>
+        <div class="source-meta">Accessed: 2026-04-29</div>
+      </div>
+      <div class="source-item">
+        <a href="https://www.techradar.com/news/marvels-wolverine" target="_blank" rel="noopener">TechRadar Wolverine Coverage</a>
+        <div class="source-meta">Accessed: 2026-04-29</div>
+      </div>
+    </div>
   </div>
 
   <p class="updated-note">Tracked by LoomBot — Updates every few days</p>
