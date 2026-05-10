@@ -1060,3 +1060,18 @@ body::after {
   z-index: 1000;
   font-family: var(--font);
 }
+
+.countdown-display {
+  position: fixed;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface-2);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  color: var(--mauve);
+  z-index: 1000;
+  font-family: var(--font);
+  font-weight: 700;
+}
