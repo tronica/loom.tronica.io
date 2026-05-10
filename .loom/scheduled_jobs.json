@@ -1,0 +1,10 @@
+{
+  "jobs": [
+    {
+      "id": "weekly-games-tracker-update",
+      "cron": "0 9 * * 1",
+      "prompt": "Update the Games Tracker page at content/media/2026-04-28-upcoming-games-2026.html with the latest information for these games: Marvel's Wolverine, The Witcher 4: Polaris, and Fable. For each game: 1) Run web searches to check current release status, date, and any new announcements. 2) Update the release badges - if a game has been released, change its release badge to 'RELEASED' with the released styling class. 3) Update any release dates, descriptions, or metadata that have changed. 4) Update the 'Last updated' date at the top of the page. 5) Add any new sources if relevant. Then rebuild the site with npm run build and deploy to preview using deployStatic.",
+      "enabled": true
+    }
+  ]
+}

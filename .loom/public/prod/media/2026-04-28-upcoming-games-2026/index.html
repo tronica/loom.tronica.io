@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games Tracker — loom</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="sidebar-overlay"
+      id="sidebarOverlay"
+      onclick="closeSidebar()"
+    ></div>
+    <aside class="sidebar-drawer" id="sidebarDrawer">
+      <div class="sidebar-drawer-header">
+        <span class="sidebar-drawer-title">loom</span>
+        <button class="sidebar-close" onclick="closeSidebar()">✕</button>
+      </div>
+      <nav class="sidebar-drawer-nav">
+        <div class="sidebar-drawer-section-title">sections</div>
+        <ul class="sidebar-drawer-list">
+                      
+          <li><a href="/media/">media</a></li>
+          
+          <li><a href="/posts/">posts</a></li>
+          
+        </ul>
+        <div class="sidebar-drawer-section-title">recent</div>
+        <ul class="sidebar-drawer-list">
+           
+          <li><a href="/media/2026-04-28-upcoming-games-2026/">Games Tracker</a></li>
+            
+          <li><a href="/posts/2026-04-27-what-is-quil/">What is Loom?</a></li>
+           
+        </ul>
+      </nav>
+    </aside>
+
+    <header class="site-header">
+      <nav class="nav">
+        <div class="nav-left">
+          <button
+            class="sidebar-toggle"
+            onclick="openSidebar()"
+            aria-label="Open sidebar"
+          >
+            ☰
+          </button>
+          <a href="/" class="nav-brand">
+            <span class="nav-brand-title">loom</span
+            ><span class="nav-brand-cursor"></span>
+          </a>
+        </div>
+        <div class="nav-links">
+                      
+          <a href="/media/" class="nav-section">media</a>
+          <span class="nav-sep">·</span> 
+          <a href="/posts/" class="nav-section">posts</a>
+           
+          <a href="/search/" class="nav-search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            [?]
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      
+      <div class="raw-content">
+<style>
+  .games-container {
+    max-width: var(--wide-w);
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .games-masthead {
+    margin-bottom: 2rem;
+  }
+
+  .games-masthead h1 {
+    font-size: 2.2rem;
+    color: var(--mauve);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+    font-family: "Bitcount Grid Double", monospace, sans-serif;
+  }
+
+  .games-masthead h1::before {
+    content: "~/media/";
+    color: var(--text-3);
+    font-family: var(--font);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    margin-right: 0.5rem;
+  }
+
+  .games-subtitle {
+    color: var(--text-3);
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+
+  .games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  .game-card {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: var(--bg-2);
+    border: 1px solid var(--border-hi);
+    padding: 1rem;
+    transition:
+      border-color 0.12s,
+      background 0.12s;
+  }
+
+  .game-card:hover {
+    border-color: var(--border-act);
+    background: var(--surface);
+  }
+
+  .game-card:hover .game-title {
+    color: var(--mauve);
+  }
+
+  .game-image-placeholder {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    margin-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--text-3);
+    overflow: hidden;
+  }
+
+  .game-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    transition: color 0.12s;
+  }
+
+  .game-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .game-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid var(--border-hi);
+    background: var(--surface-2);
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-2);
+  }
+
+  .badge-ps5 { border-color: var(--blue); color: var(--blue); }
+  .badge-pc { border-color: var(--text-3); color: var(--text-3); }
+  .badge-xbox { border-color: var(--green); color: var(--green); }
+  .badge-nintendo { border-color: var(--peach); color: var(--peach); }
+  .badge-confirmed { border-color: var(--green); color: var(--green); }
+  .badge-tba { border-color: var(--yellow); color: var(--yellow); }
+  .badge-rumoured { border-color: var(--red); color: var(--red); }
+  .badge-delayed { border-color: var(--red); color: var(--red); }
+
+  .release-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid var(--border-act);
+    background: rgba(203, 166, 247, 0.1);
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--mauve);
+    margin-left: auto;
+  }
+
+  .release-released {
+    border-color: var(--green);
+    background: rgba(166, 227, 161, 0.1);
+    color: var(--green);
+  }
+
+  .game-description {
+    font-size: 0.8rem;
+    color: var(--text-2);
+    line-height: 1.5;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .sources-panel {
+    margin-top: 2rem;
+  }
+
+  .sources-panel-title {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    left: 1rem;
+    padding: 0 0.4rem;
+    background: var(--bg);
+    font-size: 0.72rem;
+    color: var(--text-3);
+    white-space: nowrap;
+  }
+
+  .sources-panel-title .hi {
+    color: var(--blue);
+  }
+
+  .sources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.75rem;
+    padding-top: 0.75rem;
+  }
+
+  .source-item {
+    padding: 0.65rem 0.85rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .source-item:last-child {
+    border-bottom: none;
+  }
+
+  .source-item a {
+    color: var(--cyan);
+    text-decoration: none;
+    font-size: 0.8rem;
+    word-break: break-all;
+    display: block;
+  }
+
+  .source-item a:hover {
+    color: var(--mauve);
+    text-decoration: underline;
+  }
+
+  .source-meta {
+    font-size: 0.7rem;
+    color: var(--text-3);
+    margin-top: 0.2rem;
+  }
+
+  .updated-note {
+    font-size: 0.75rem;
+    color: var(--text-3);
+    margin-top: 1.5rem;
+    text-align: center;
+    font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    .games-container {
+      padding: 1.5rem 1rem;
+    }
+    .games-masthead h1 {
+      font-size: 1.6rem;
+    }
+    .games-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="games-container">
+  <div class="games-masthead">
+    <h1>Games Tracker</h1>
+    <p class="games-subtitle">Upcoming 2026 Releases — Last updated: 29 Apr 2026</p>
+  </div>
+
+  <div class="games-grid">
+    <!-- Game 1: Marvel's Wolverine -->
+    <div class="game-card">
+      <div class="game-image-placeholder" style="background: linear-gradient(135deg, var(--red) 0%, var(--mauve) 100%);">
+        <span>🎮</span>
+      </div>
+      <h2 class="game-title">
+        <a href="https://www.ign.com/games/marvels-wolverine" target="_blank" rel="noopener">
+          Marvel's Wolverine
+        </a>
+      </h2>
+      <div class="game-meta">
+        <span class="badge badge-ps5">PS5</span>
+        <span class="badge badge-confirmed">Confirmed</span>
+        <span class="release-badge">Fall 2026</span>
+      </div>
+      <p class="game-description">
+        Insomniac Games • Action / Adventure • PS5 Exclusive • State of Play Sep 24, 2025 confirmed
+      </p>
+    </div>
+
+    <!-- Game 2: The Witcher 4 -->
+    <div class="game-card">
+      <div class="game-image-placeholder" style="background: linear-gradient(135deg, var(--surface-2) 0%, var(--bg-2) 100%);">
+        <span>⚔️</span>
+      </div>
+      <h2 class="game-title">
+        <a href="https://www.ign.com/games/the-witcher-4-polaris" target="_blank" rel="noopener">
+          The Witcher 4: Polaris
+        </a>
+      </h2>
+      <div class="game-meta">
+        <span class="badge badge-pc">PC</span>
+        <span class="badge badge-ps5">PS5</span>
+        <span class="release-badge">TBA 2026</span>
+      </div>
+      <p class="game-description">
+        CD Projekt Red • Action RPG • Unreal Engine 5 • Ciri as protagonist
+      </p>
+    </div>
+
+    <!-- Game 3: Fable -->
+    <div class="game-card">
+      <div class="game-image-placeholder" style="background: linear-gradient(135deg, var(--green) 0%, var(--blue) 100%);">
+        <span>★</span>
+      </div>
+      <h2 class="game-title">
+        <a href="https://www.ign.com/games/fable-2026" target="_blank" rel="noopener">
+          Fable
+        </a>
+      </h2>
+      <div class="game-meta">
+        <span class="badge badge-xbox">Xbox</span>
+        <span class="badge badge-pc">PC</span>
+        <span class="badge badge-ps5">PS5</span>
+        <span class="badge badge-rumoured">Rumoured</span>
+        <span class="release-badge">Q4 2026</span>
+      </div>
+      <p class="game-description">
+        Playground Games • Action RPG • 1,000 handcrafted NPCs
+      </p>
+    </div>
+
+
+  </div>
+
+  <div class="sources-panel panel">
+    <div class="sources-panel-title">─[ <span class="hi">Sources</span> ]─</div>
+    <div class="sources-grid">
+      <div class="source-item">
+        <a href="https://www.ign.com/" target="_blank" rel="noopener">IGN</a>
+        <div class="source-meta">Accessed: 2026-04-29</div>
+      </div>
+      <div class="source-item">
+        <a href="https://blog.playstation.com/2025/09/24/marvels-wolverine-arrives-on-playstation-5-fall-2026/" target="_blank" rel="noopener">PlayStation Blog - Wolverine Announcement</a>
+        <div class="source-meta">Accessed: 2026-04-29</div>
+      </div>
+      <div class="source-item">
+        <a href="https://www.techradar.com/news/marvels-wolverine" target="_blank" rel="noopener">TechRadar Wolverine Coverage</a>
+        <div class="source-meta">Accessed: 2026-04-29</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="updated-note">Tracked by LoomBot — Updates every few days</p>
+</div>
+</div>
+
+      
+    </main>
+
+    <script>
+      function openSidebar() {
+        document.getElementById("sidebarDrawer").classList.add("open");
+        document.getElementById("sidebarOverlay").classList.add("open");
+      }
+      function closeSidebar() {
+        document.getElementById("sidebarDrawer").classList.remove("open");
+        document.getElementById("sidebarOverlay").classList.remove("open");
+      }
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeSidebar();
+      });
+    </script>
+
+    <footer class="site-footer">
+      <span class="status-mode">NORMAL</span>
+      <span class="status-path">loom/</span>
+      <span class="status-middle">
+        personal knowledge base &nbsp;·&nbsp; editable by humans &amp; agents
+      </span>
+      <div class="status-right">
+        <span>2 pages</span>
+        <span class="status-ok">● ready</span>
+      </div>
+    </footer>
+  </body>
+</html>

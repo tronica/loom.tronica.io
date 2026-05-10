@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is Loom? — loom</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="sidebar-overlay"
+      id="sidebarOverlay"
+      onclick="closeSidebar()"
+    ></div>
+    <aside class="sidebar-drawer" id="sidebarDrawer">
+      <div class="sidebar-drawer-header">
+        <span class="sidebar-drawer-title">loom</span>
+        <button class="sidebar-close" onclick="closeSidebar()">✕</button>
+      </div>
+      <nav class="sidebar-drawer-nav">
+        <div class="sidebar-drawer-section-title">sections</div>
+        <ul class="sidebar-drawer-list">
+                      
+          <li><a href="/media/">media</a></li>
+          
+          <li><a href="/posts/">posts</a></li>
+          
+        </ul>
+        <div class="sidebar-drawer-section-title">recent</div>
+        <ul class="sidebar-drawer-list">
+           
+          <li><a href="/media/2026-04-28-upcoming-games-2026/">Games Tracker</a></li>
+            
+          <li><a href="/posts/2026-04-27-what-is-quil/">What is Loom?</a></li>
+           
+        </ul>
+      </nav>
+    </aside>
+
+    <header class="site-header">
+      <nav class="nav">
+        <div class="nav-left">
+          <button
+            class="sidebar-toggle"
+            onclick="openSidebar()"
+            aria-label="Open sidebar"
+          >
+            ☰
+          </button>
+          <a href="/" class="nav-brand">
+            <span class="nav-brand-title">loom</span
+            ><span class="nav-brand-cursor"></span>
+          </a>
+        </div>
+        <div class="nav-links">
+                      
+          <a href="/media/" class="nav-section">media</a>
+          <span class="nav-sep">·</span> 
+          <a href="/posts/" class="nav-section">posts</a>
+           
+          <a href="/search/" class="nav-search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            [?]
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      
+      <article class="prose">
+        
+        <a href="javascript:history.back()" class="back-btn">← back</a>
+        <div class="breadcrumb">
+          <a href="/">~</a>
+          
+          <span class="sep">/</span>
+          <a href="/posts/">posts</a>
+          
+          <span class="sep">/</span>
+          <span>what is loom?</span>
+        </div>
+        <h1>What is Loom?</h1>
+        <div class="prose-meta">
+          <span
+            ><time datetime="2026-04-27"
+              >Apr 27, 2026</time
+            ></span
+          >
+          
+        </div>
+        <div class="prose-body"><p>Loom is a personal knowledge base. It is a single-owner site for notes, trackers, and structured data pages — maintained by human and agent contributors, reviewed by an automated webmaster before anything reaches the site.</p>
+<h2>Why it exists</h2>
+<p>Data is scattered. Notes live in one app, trackers in another, feeds somewhere else. Loom consolidates what you care about into one coherent, readable place — without generating content for its own sake.</p>
+<h2>How it works</h2>
+<p>Content lives as plain markdown or HTML files in a <code>content/</code> folder. Every commit pushed to the <code>main</code> branch publishes the site.</p>
+<p>Contributors — human or agent — create and update pages on a <code>contrib/</code> branch and open a pull request. A webmaster agent reviews every PR automatically: it checks content quality, correct structure, and source citations before merging or closing.</p>
+<p>There is one contributor role. Contributors create new pages or update pages they are responsible for. They never push directly to <code>main</code>.</p>
+<h2>Philosophy</h2>
+<p>The internet doesn’t need more AI-generated noise. Loom takes the opposite approach — content must have a reason to exist, data must be cited, and nothing reaches the site without review. The webmaster is the last check before publication.</p>
+<h2>The stack</h2>
+<ul>
+<li><strong>Eleventy</strong> — static site generator, zero opinions on content structure</li>
+<li><strong>Pagefind</strong> — full-text search indexed at build time</li>
+<li><strong>GitHub</strong> — version control and pull request workflow</li>
+<li><strong>GitHub Actions</strong> — runs the webmaster on every PR</li>
+</ul>
+</div>
+      </article>
+      
+    </main>
+
+    <script>
+      function openSidebar() {
+        document.getElementById("sidebarDrawer").classList.add("open");
+        document.getElementById("sidebarOverlay").classList.add("open");
+      }
+      function closeSidebar() {
+        document.getElementById("sidebarDrawer").classList.remove("open");
+        document.getElementById("sidebarOverlay").classList.remove("open");
+      }
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeSidebar();
+      });
+    </script>
+
+    <footer class="site-footer">
+      <span class="status-mode">NORMAL</span>
+      <span class="status-path">loom/</span>
+      <span class="status-middle">
+        personal knowledge base &nbsp;·&nbsp; editable by humans &amp; agents
+      </span>
+      <div class="status-right">
+        <span>2 pages</span>
+        <span class="status-ok">● ready</span>
+      </div>
+    </footer>
+  </body>
+</html>

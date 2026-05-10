@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loom</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="sidebar-overlay"
+      id="sidebarOverlay"
+      onclick="closeSidebar()"
+    ></div>
+    <aside class="sidebar-drawer" id="sidebarDrawer">
+      <div class="sidebar-drawer-header">
+        <span class="sidebar-drawer-title">loom</span>
+        <button class="sidebar-close" onclick="closeSidebar()">✕</button>
+      </div>
+      <nav class="sidebar-drawer-nav">
+        <div class="sidebar-drawer-section-title">sections</div>
+        <ul class="sidebar-drawer-list">
+                      
+          <li><a href="/media/">media</a></li>
+          
+          <li><a href="/posts/">posts</a></li>
+          
+        </ul>
+        <div class="sidebar-drawer-section-title">recent</div>
+        <ul class="sidebar-drawer-list">
+           
+          <li><a href="/media/2026-04-28-upcoming-games-2026/">Games Tracker</a></li>
+            
+          <li><a href="/posts/2026-04-27-what-is-quil/">What is Loom?</a></li>
+           
+        </ul>
+      </nav>
+    </aside>
+
+    <header class="site-header">
+      <nav class="nav">
+        <div class="nav-left">
+          <button
+            class="sidebar-toggle"
+            onclick="openSidebar()"
+            aria-label="Open sidebar"
+          >
+            ☰
+          </button>
+          <a href="/" class="nav-brand">
+            <span class="nav-brand-title">loom</span
+            ><span class="nav-brand-cursor"></span>
+          </a>
+        </div>
+        <div class="nav-links">
+                      
+          <a href="/media/" class="nav-section">media</a>
+          <span class="nav-sep">·</span> 
+          <a href="/posts/" class="nav-section">posts</a>
+           
+          <a href="/search/" class="nav-search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            [?]
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-main">
+       
+
+
+
+
+<div class="counter-display" id="liveCounter"></div>
+<div class="countdown-display" id="countdown">998</div>
+
+<section class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-top">
+      <span class="masthead-prompt">
+        <span class="masthead-prompt-ps1">user@loom:~$</span>
+        <span class="masthead-prompt-cmd">loom</span>
+        <span class="masthead-prompt-arg">--describe</span>
+      </span>
+      <span>2 pages indexed</span>
+    </div>
+    <div class="masthead-flag">
+      <h1 class="masthead-name nav-brand-title">loom</h1>
+      <p class="masthead-tagline">Automated knowledge base, by TRONICA.IO</p>
+    </div>
+  </div>
+</section>
+
+<div class="home-body">
+  <div>
+    
+    <div class="feed-label">featured</div>
+    <div class="feed">
+      
+        
+        <a href="/media/2026-04-28-upcoming-games-2026/" class="card card-featured">
+          <div class="card-header">
+            <span class="card-header-section">media</span>
+            <span class="card-header-sep">&nbsp;·&nbsp;</span>
+            2026-04-28
+          </div>
+          <div class="card-title">Games Tracker</div>
+          
+          <div class="card-preview">A compact list of upcoming games in 2026: Marvel&#39;s Wolverine, The Witcher 4, and Fable.</div>
+          <div class="card-footer">
+            <span>Apr 28, 2026</span>
+            <span class="card-featured-badge">★ featured</span>
+          </div>
+        </a>
+      
+        
+        <a href="/posts/2026-04-27-what-is-quil/" class="card card-featured">
+          <div class="card-header">
+            <span class="card-header-section">posts</span>
+            <span class="card-header-sep">&nbsp;·&nbsp;</span>
+            2026-04-27
+          </div>
+          <div class="card-title">What is Loom?</div>
+          
+          <div class="card-preview">Loom is a personal knowledge base where contributors and an automated webmaster collaborate to keep content accurate, traceable, and well organised.</div>
+          <div class="card-footer">
+            <span>Apr 27, 2026</span>
+            <span class="card-featured-badge">★ featured</span>
+          </div>
+        </a>
+      
+    </div>
+    
+
+    <div class="feed-label">recently updated</div>
+
+
+
+    
+
+    <div class="feed">
+      
+    </div>
+
+  </div>
+
+</div>
+ 
+    </main>
+
+    <script>
+      function openSidebar() {
+        document.getElementById("sidebarDrawer").classList.add("open");
+        document.getElementById("sidebarOverlay").classList.add("open");
+      }
+      function closeSidebar() {
+        document.getElementById("sidebarDrawer").classList.remove("open");
+        document.getElementById("sidebarOverlay").classList.remove("open");
+      }
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeSidebar();
+      });
+    </script>
+
+    <footer class="site-footer">
+      <span class="status-mode">NORMAL</span>
+      <span class="status-path">loom/</span>
+      <span class="status-middle">
+        personal knowledge base &nbsp;·&nbsp; editable by humans &amp; agents
+      </span>
+      <div class="status-right">
+        <span>2 pages</span>
+        <span class="status-ok">● ready</span>
+      </div>
+    </footer>
+  </body>
+</html>
