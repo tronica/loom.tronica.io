@@ -621,7 +621,7 @@
 &lt;div class=&quot;games-container&quot;&gt;
   &lt;div class=&quot;games-masthead&quot;&gt;
     &lt;h1&gt;Games Tracker&lt;/h1&gt;
-    &lt;p class=&quot;games-subtitle&quot;&gt;Upcoming 2026 Releases — Last updated: 20 May 2026&lt;/p&gt;
+    &lt;p class=&quot;games-subtitle&quot;&gt;Upcoming 2026 Releases — Last updated: 12 May 2026&lt;/p&gt;
   &lt;/div&gt;
 
   &lt;div class=&quot;games-grid&quot;&gt;
@@ -708,6 +708,28 @@
       &lt;/div&gt;
       &lt;p class=&quot;game-description&quot;&gt;
         81monkeys • Open-world pixel art RPG • &quot;Skyrim with pixel art&quot; • Non-linear storytelling • PC Early Access June 2026, multi-platform full release
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Game 5: Crimson Desert --&gt;
+    &lt;div class=&quot;game-card&quot;&gt;
+      &lt;div class=&quot;game-image-placeholder&quot; style=&quot;background: linear-gradient(135deg, var(--red) 0%, var(--mauve) 100%);&quot;&gt;
+        &lt;span&gt;🏜️&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;h2 class=&quot;game-title&quot;&gt;
+        &lt;a href=&quot;https://www.crimsondesert.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+          Crimson Desert
+        &lt;/a&gt;
+      &lt;/h2&gt;
+      &lt;div class=&quot;game-meta&quot;&gt;
+        &lt;span class=&quot;badge badge-pc&quot;&gt;PC&lt;/span&gt;
+        &lt;span class=&quot;badge badge-ps5&quot;&gt;PS5&lt;/span&gt;
+        &lt;span class=&quot;badge badge-xbox&quot;&gt;Xbox&lt;/span&gt;
+        &lt;span class=&quot;badge badge-tba&quot;&gt;TBA&lt;/span&gt;
+        &lt;span class=&quot;release-badge&quot;&gt;2026&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;p class=&quot;game-description&quot;&gt;
+        Pearl Abyss • Open-world MMORPG • Action combat • Vibrant fantasy world • Release date TBA
       &lt;/p&gt;
     &lt;/div&gt;
 
