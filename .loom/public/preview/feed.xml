@@ -449,6 +449,15 @@
       background 0.12s;
   }
 
+  .game-card.upcoming {
+    border-color: var(--yellow);
+  }
+
+  .game-card.released {
+    border-color: var(--green);
+    background: rgba(166, 227, 161, 0.05);
+  }
+
   .game-card:hover {
     border-color: var(--border-act);
     background: var(--surface);
@@ -456,6 +465,29 @@
 
   .game-card:hover .game-title {
     color: var(--mauve);
+  }
+
+  .game-status {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
+  }
+
+  .game-status.upcoming {
+    background: var(--yellow);
+    color: var(--bg);
+  }
+
+  .game-status.released {
+    background: var(--green);
+    color: white;
   }
 
   .game-image-placeholder {
@@ -626,7 +658,8 @@
 
   &lt;div class=&quot;games-grid&quot;&gt;
     &lt;!-- Game 1: Marvel&#39;s Wolverine --&gt;
-    &lt;div class=&quot;game-card&quot;&gt;
+    &lt;div class=&quot;game-card upcoming&quot;&gt;
+      &lt;span class=&quot;game-status upcoming&quot;&gt;Upcoming&lt;/span&gt;
       &lt;div class=&quot;game-image-placeholder&quot; style=&quot;background: linear-gradient(135deg, var(--red) 0%, var(--mauve) 100%);&quot;&gt;
         &lt;span&gt;🎮&lt;/span&gt;
       &lt;/div&gt;
@@ -646,7 +679,8 @@
     &lt;/div&gt;
 
     &lt;!-- Game 2: The Witcher 4 --&gt;
-    &lt;div class=&quot;game-card&quot;&gt;
+    &lt;div class=&quot;game-card upcoming&quot;&gt;
+      &lt;span class=&quot;game-status upcoming&quot;&gt;Upcoming&lt;/span&gt;
       &lt;div class=&quot;game-image-placeholder&quot; style=&quot;background: linear-gradient(135deg, var(--surface-2) 0%, var(--bg-2) 100%);&quot;&gt;
         &lt;span&gt;⚔️&lt;/span&gt;
       &lt;/div&gt;
@@ -667,7 +701,8 @@
     &lt;/div&gt;
 
     &lt;!-- Game 3: Fable --&gt;
-    &lt;div class=&quot;game-card&quot;&gt;
+    &lt;div class=&quot;game-card upcoming&quot;&gt;
+      &lt;span class=&quot;game-status upcoming&quot;&gt;Upcoming&lt;/span&gt;
       &lt;div class=&quot;game-image-placeholder&quot; style=&quot;background: linear-gradient(135deg, var(--green) 0%, var(--blue) 100%);&quot;&gt;
         &lt;span&gt;★&lt;/span&gt;
       &lt;/div&gt;
@@ -689,7 +724,8 @@
     &lt;/div&gt;
 
     &lt;!-- Game 4: World of Anterra --&gt;
-    &lt;div class=&quot;game-card&quot;&gt;
+    &lt;div class=&quot;game-card upcoming&quot;&gt;
+      &lt;span class=&quot;game-status upcoming&quot;&gt;Upcoming&lt;/span&gt;
       &lt;div class=&quot;game-image-placeholder&quot; style=&quot;background: linear-gradient(135deg, var(--peach) 0%, var(--mauve) 100%);&quot;&gt;
         &lt;span&gt;🏰&lt;/span&gt;
       &lt;/div&gt;
@@ -712,7 +748,8 @@
     &lt;/div&gt;
 
     &lt;!-- Game 5: Crimson Desert --&gt;
-    &lt;div class=&quot;game-card&quot;&gt;
+    &lt;div class=&quot;game-card upcoming&quot;&gt;
+      &lt;span class=&quot;game-status upcoming&quot;&gt;Upcoming&lt;/span&gt;
       &lt;div class=&quot;game-image-placeholder&quot; style=&quot;background: linear-gradient(135deg, var(--red) 0%, var(--mauve) 100%);&quot;&gt;
         &lt;span&gt;🏜️&lt;/span&gt;
       &lt;/div&gt;
