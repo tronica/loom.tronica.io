@@ -748,8 +748,8 @@
     &lt;/div&gt;
 
     &lt;!-- Game 5: Crimson Desert --&gt;
-    &lt;div class=&quot;game-card upcoming&quot;&gt;
-      &lt;span class=&quot;game-status upcoming&quot;&gt;Upcoming&lt;/span&gt;
+    &lt;div class=&quot;game-card released&quot;&gt;
+      &lt;span class=&quot;game-status released&quot;&gt;Released&lt;/span&gt;
       &lt;div class=&quot;game-image-placeholder&quot; style=&quot;background: linear-gradient(135deg, var(--red) 0%, var(--mauve) 100%);&quot;&gt;
         &lt;span&gt;🏜️&lt;/span&gt;
       &lt;/div&gt;
@@ -762,11 +762,11 @@
         &lt;span class=&quot;badge badge-pc&quot;&gt;PC&lt;/span&gt;
         &lt;span class=&quot;badge badge-ps5&quot;&gt;PS5&lt;/span&gt;
         &lt;span class=&quot;badge badge-xbox&quot;&gt;Xbox&lt;/span&gt;
-        &lt;span class=&quot;badge badge-tba&quot;&gt;TBA&lt;/span&gt;
-        &lt;span class=&quot;release-badge&quot;&gt;2026&lt;/span&gt;
+        &lt;span class=&quot;badge badge-confirmed&quot;&gt;Confirmed&lt;/span&gt;
+        &lt;span class=&quot;release-badge released&quot;&gt;Mar 19, 2026&lt;/span&gt;
       &lt;/div&gt;
       &lt;p class=&quot;game-description&quot;&gt;
-        Pearl Abyss • Open-world MMORPG • Action combat • Vibrant fantasy world • Release date TBA
+        Pearl Abyss • Open-world MMORPG • Action combat • Vibrant fantasy world • Released March 19, 2026
       &lt;/p&gt;
     &lt;/div&gt;
 
