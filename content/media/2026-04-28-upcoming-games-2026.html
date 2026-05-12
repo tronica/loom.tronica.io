@@ -62,6 +62,15 @@ tags: media
       background 0.12s;
   }
 
+  .game-card.upcoming {
+    border-color: var(--yellow);
+  }
+
+  .game-card.released {
+    border-color: var(--green);
+    background: rgba(166, 227, 161, 0.05);
+  }
+
   .game-card:hover {
     border-color: var(--border-act);
     background: var(--surface);
@@ -69,6 +78,29 @@ tags: media
 
   .game-card:hover .game-title {
     color: var(--mauve);
+  }
+
+  .game-status {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
+  }
+
+  .game-status.upcoming {
+    background: var(--yellow);
+    color: var(--bg);
+  }
+
+  .game-status.released {
+    background: var(--green);
+    color: white;
   }
 
   .game-image-placeholder {
@@ -239,7 +271,8 @@ tags: media
 
   <div class="games-grid">
     <!-- Game 1: Marvel's Wolverine -->
-    <div class="game-card">
+    <div class="game-card upcoming">
+      <span class="game-status upcoming">Upcoming</span>
       <div class="game-image-placeholder" style="background: linear-gradient(135deg, var(--red) 0%, var(--mauve) 100%);">
         <span>🎮</span>
       </div>
@@ -259,7 +292,8 @@ tags: media
     </div>
 
     <!-- Game 2: The Witcher 4 -->
-    <div class="game-card">
+    <div class="game-card upcoming">
+      <span class="game-status upcoming">Upcoming</span>
       <div class="game-image-placeholder" style="background: linear-gradient(135deg, var(--surface-2) 0%, var(--bg-2) 100%);">
         <span>⚔️</span>
       </div>
@@ -280,7 +314,8 @@ tags: media
     </div>
 
     <!-- Game 3: Fable -->
-    <div class="game-card">
+    <div class="game-card upcoming">
+      <span class="game-status upcoming">Upcoming</span>
       <div class="game-image-placeholder" style="background: linear-gradient(135deg, var(--green) 0%, var(--blue) 100%);">
         <span>★</span>
       </div>
@@ -302,7 +337,8 @@ tags: media
     </div>
 
     <!-- Game 4: World of Anterra -->
-    <div class="game-card">
+    <div class="game-card upcoming">
+      <span class="game-status upcoming">Upcoming</span>
       <div class="game-image-placeholder" style="background: linear-gradient(135deg, var(--peach) 0%, var(--mauve) 100%);">
         <span>🏰</span>
       </div>
@@ -325,7 +361,8 @@ tags: media
     </div>
 
     <!-- Game 5: Crimson Desert -->
-    <div class="game-card">
+    <div class="game-card upcoming">
+      <span class="game-status upcoming">Upcoming</span>
       <div class="game-image-placeholder" style="background: linear-gradient(135deg, var(--red) 0%, var(--mauve) 100%);">
         <span>🏜️</span>
       </div>
