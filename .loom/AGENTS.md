@@ -131,7 +131,7 @@ The full cycle every time you touch site files:
 2. Run the build command (e.g. `npm run build`, `hugo`, `jekyll build`)
 3. Commit and push source changes: `git add -A && git commit -m "..." && git push`
 4. Deploy to preview: `deployStatic(source="dist", environment="preview")`
-5. Tell the user: "Changes are live at `/?preview=1`"
+5. Notify: `notify(event="preview-deployment", props={"url": "/?preview=1"})`
 
 **Never leave changes undeployed.** If you edited files, the user should be able to see them in preview immediately.
 
