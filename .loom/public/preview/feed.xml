@@ -653,7 +653,7 @@
 &lt;div class=&quot;games-container&quot;&gt;
   &lt;div class=&quot;games-masthead&quot;&gt;
     &lt;h1&gt;Games Tracker&lt;/h1&gt;
-    &lt;p class=&quot;games-subtitle&quot;&gt;Upcoming 2026 Releases — Last updated: 12 May 2026&lt;/p&gt;
+    &lt;p class=&quot;games-subtitle&quot;&gt;Upcoming 2026 Releases — Last updated: 14 May 2026&lt;/p&gt;
   &lt;/div&gt;
 
   &lt;div class=&quot;games-grid&quot;&gt;
@@ -674,7 +674,7 @@
         &lt;span class=&quot;release-badge&quot;&gt;Sep 15, 2026&lt;/span&gt;
       &lt;/div&gt;
       &lt;p class=&quot;game-description&quot;&gt;
-        Insomniac Games • Action / Adventure • PS5 Exclusive • Officially announced Sep 15, 2026
+        Insomniac Games • Action / Adventure • PS5 Exclusive • Officially confirmed Sep 15, 2026
       &lt;/p&gt;
     &lt;/div&gt;
 
@@ -719,7 +719,7 @@
         &lt;span class=&quot;release-badge&quot;&gt;Autumn 2026&lt;/span&gt;
       &lt;/div&gt;
       &lt;p class=&quot;game-description&quot;&gt;
-        Playground Games • Action RPG • 1,000 handcrafted NPCs • Confirmed for Autumn 2026 • Xbox Game Pass at launch
+        Playground Games • Action RPG • 1,000 handcrafted NPCs • Confirmed for Autumn 2026 via Xbox Developer Direct Jan 2026 • Xbox Game Pass at launch
       &lt;/p&gt;
     &lt;/div&gt;
 
@@ -743,7 +743,7 @@
         &lt;span class=&quot;release-badge&quot;&gt;Jun 1, 2026 (Early Access)&lt;/span&gt;
       &lt;/div&gt;
       &lt;p class=&quot;game-description&quot;&gt;
-        81monkeys • Open-world pixel art RPG • &quot;Skyrim with pixel art&quot; • Non-linear storytelling • PC Early Access June 2026, multi-platform full release
+        81monkeys • Open-world pixel art RPG • &quot;Skyrim with pixel art&quot; • Non-linear storytelling • PC Early Access June 1, 2026 per Steam/RPGWatch
       &lt;/p&gt;
     &lt;/div&gt;
 
@@ -763,7 +763,7 @@
         &lt;span class=&quot;badge badge-ps5&quot;&gt;PS5&lt;/span&gt;
         &lt;span class=&quot;badge badge-xbox&quot;&gt;Xbox&lt;/span&gt;
         &lt;span class=&quot;badge badge-confirmed&quot;&gt;Confirmed&lt;/span&gt;
-        &lt;span class=&quot;release-badge released&quot;&gt;Mar 19, 2026&lt;/span&gt;
+        &lt;span class=&quot;release-badge release-released&quot;&gt;Mar 19, 2026&lt;/span&gt;
       &lt;/div&gt;
       &lt;p class=&quot;game-description&quot;&gt;
         Pearl Abyss • Open-world MMORPG • Action combat • Vibrant fantasy world • Released March 19, 2026
@@ -777,51 +777,67 @@
     &lt;div class=&quot;sources-grid&quot;&gt;
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://www.ign.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IGN&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-04-29&lt;/div&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://blog.playstation.com/2025/09/24/marvels-wolverine-arrives-on-playstation-5-fall-2026/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PlayStation Blog - Wolverine Announcement&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-04-29&lt;/div&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://www.techradar.com/news/marvels-wolverine&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;TechRadar Wolverine Coverage&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-04-29&lt;/div&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://www.marvel.com/articles/games/marvels-wolverine-gameplay-trailer-playstation-state-of-play-2025&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Marvel Official - Wolverine Sep 15, 2026&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-10&lt;/div&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;source-item&quot;&gt;
-        &lt;a href=&quot;https://www.pcgamesn.com/the-witcher-4/the-witcher-4-release-date-system-requirements-news-trailer-story-everything-we-know&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PCGamesN - Witcher 4 Delayed to 2027&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-10&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;source-item&quot;&gt;
-        &lt;a href=&quot;https://www.xbox.com/en-US/games/fable&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Xbox Official - Fable Autumn 2026&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-16&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;source-item&quot;&gt;
-        &lt;a href=&quot;https://www.ign.com/articles/fable-social-media-account-reiterates-fall-2026-release-window-amid-rumors-of-an-internal-delay-to-avoid-gta-6&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IGN - Fable Fall 2026 Confirmation&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-16&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;source-item&quot;&gt;
-        &lt;a href=&quot;https://www.eurogamer.net/fable-still-coming-autumn-2026&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Eurogamer - Fable Autumn 2026 Confirmation&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-16&lt;/div&gt;
+        &lt;a href=&quot;https://www.collider.com/marvel-wolverine-playstation-5-video-game-release-date-september-15-2026/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Collider - Wolverine Sep 15, 2026 Confirmation&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://www.primetimer.com/news/insomniac-games-sets-marvel-s-wolverine-release-date-for-september-2026&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PrimeTimer - Wolverine Sep 15, 2026&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-16&lt;/div&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://www.pcgamesn.com/the-witcher-4/the-witcher-4-release-date-system-requirements-news-trailer-story-everything-we-know&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PCGamesN - Witcher 4 Delayed to 2027&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://www.gosugamers.net/entertainment/news/74578-cd-projekt-red-the-witcher-4-won-t-launch-before-2027-other-projects-in-early-development&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GosuGamers - Witcher 4 Not Before 2027&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-16&lt;/div&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;source-item&quot;&gt;
-        &lt;a href=&quot;https://store.steampowered.com/app/2402470/World_of_Anterra/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Steam - World of Anterra Early Access June 1, 2026&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-20&lt;/div&gt;
+        &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Witcher_IV&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wikipedia - The Witcher IV&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://www.xbox.com/en-US/games/fable&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Xbox Official - Fable Autumn 2026&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://www.ign.com/articles/marvels-wolverine-carves-a-out-a-september-release-date-at-last&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IGN - Wolverine September Release Date&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://www.eurogamer.net/fable-finally-gets-a-release-window-following-xbox-developer-direct-will-launch-in-autumn-2026&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Eurogamer - Fable Autumn 2026 Confirmation&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://news.xbox.com/en-us/2026/01/22/xbox-developer-direct-2026-recap/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Xbox Wire - Developer Direct 2026 Recap&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://store.steampowered.com/app/2402470/World_of_Anterra/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Steam - World of Anterra Early Access&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;source-item&quot;&gt;
+        &lt;a href=&quot;https://rpgwatch.com/games/world-of-anterra-2177.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RPGWatch - World of Anterra June 1, 2026&lt;/a&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://www.anterrarpg.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Official Site - World of Anterra&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-20&lt;/div&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-05-14&lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
