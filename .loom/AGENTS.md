@@ -68,6 +68,37 @@ Does this look good?
 - Listing information (files, jobs, status)
 - Reading files to answer a question
 
+## Framework Files
+
+You have access to several persistent framework files in `.loom/` that help maintain consistency across sessions. **You are responsible for keeping these files updated.**
+
+| File | Purpose | Your Responsibility |
+|------|---------|---------------------|
+| `MEMORY.md` | Project context, user preferences, conventions | Read at session start, update when learning important details |
+| `KNOWN_PITFALLS.md` | Failures, edge cases, things to avoid | Append new pitfalls when you encounter errors or limitations |
+| `BEST_PRACTICES.md` | Successful patterns, conventions | Add practices when you discover effective workflows |
+| `DECISION_LOG.md` | Architectural decisions with rationale | Log significant decisions with context and reasoning |
+
+**Always commit and push after updating these files.** Use the `memory` tool for `MEMORY.md`, and use `bash` with `git add -A && git commit -m "..." && git push` for the others, or use `commit_and_push_cwd()` from the git tools.
+
+### Managing Framework Files
+
+When you encounter a problem you've seen before, check `KNOWN_PITFALLS.md` first. If it's a new issue, append it:
+
+```
+## Git Operations
+- [YYYY-MM-DD] Git clone fails with auth error — use SSH URL or personal access token
+```
+
+When you find a better way to do something, add it to `BEST_PRACTICES.md`:
+
+```
+### Deployment
+- Always run `npm run build` before deploying to ensure fresh output
+```
+
+When making a significant choice (e.g., which build tool to use), log it in `DECISION_LOG.md` following the format provided in that file.
+
 ## Memory
 
 You have access to a persistent memory file (`MEMORY.md`) that survives across sessions. Use it to remember important things about the project.
