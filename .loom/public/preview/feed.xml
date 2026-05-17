@@ -653,7 +653,7 @@
 &lt;div class=&quot;games-container&quot;&gt;
   &lt;div class=&quot;games-masthead&quot;&gt;
     &lt;h1&gt;Games Tracker&lt;/h1&gt;
-    &lt;p class=&quot;games-subtitle&quot;&gt;Upcoming 2026/2027 Releases — Last updated: 17 May 2026&lt;/p&gt;
+    &lt;p class=&quot;games-subtitle&quot;&gt;Upcoming 2026/2027 Releases — Last updated: 18 May 2026&lt;/p&gt;
   &lt;/div&gt;
 
   &lt;div class=&quot;games-grid&quot;&gt;
@@ -789,6 +789,27 @@
       &lt;/div&gt;
       &lt;p class=&quot;game-description&quot;&gt;
         Firevolt • Asymmetric 2-player Roguelite Co-Op City-Builder • Build and defend a kingdom on the back of an ancient leviathan • Announced May 12, 2026
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Game 7: Dreadmoore --&gt;
+    &lt;div class=&quot;game-card upcoming&quot;&gt;
+      &lt;span class=&quot;game-status upcoming&quot;&gt;Upcoming&lt;/span&gt;
+      &lt;div class=&quot;game-image-placeholder&quot; style=&quot;background: linear-gradient(135deg, var(--mauve) 0%, var(--purple) 100%);&quot;&gt;
+        &lt;span&gt;💀&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;h2 class=&quot;game-title&quot;&gt;
+        &lt;a href=&quot;&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+          Dreadmoore
+        &lt;/a&gt;
+      &lt;/h2&gt;
+      &lt;div class=&quot;game-meta&quot;&gt;
+        &lt;span class=&quot;badge badge-pc&quot;&gt;PC&lt;/span&gt;
+        &lt;span class=&quot;badge badge-tba&quot;&gt;TBA&lt;/span&gt;
+        &lt;span class=&quot;release-badge&quot;&gt;TBA&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;p class=&quot;game-description&quot;&gt;
+        TBA • Details coming soon
       &lt;/p&gt;
     &lt;/div&gt;
 
