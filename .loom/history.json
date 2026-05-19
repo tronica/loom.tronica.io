@@ -67,6 +67,10 @@
       "role": "user",
       "content": "Can you updatre the games scheduled task so that it researches for updates on all video games already included in the pages which are not released. And that it always deploys to production",
       "sender_id": "9526e159"
+    },
+    {
+      "role": "assistant",
+      "content": "Updated the scheduled task `weekly-games-tracker-update`:\n\n**Changes:**\n- Now researches updates for **ALL video games** included in the page that are NOT released (not just the 4 specified games)\n- Changed deployment target from **preview** to **prod**\n\n**Schedule:** Runs every Monday at 9:00 AM (cron: `0 9 * * 1`)\n\nThe task will now check all unreleased games in the Games Tracker page (Marvel's Wolverine, The Witcher 4: Polaris, Fable, World of Anterra, Kingfish, Dreadmoore) and deploy directly to production."
     }
   ]
 }
