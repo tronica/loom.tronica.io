@@ -71,6 +71,11 @@
     {
       "role": "assistant",
       "content": "Updated the scheduled task `weekly-games-tracker-update`:\n\n**Changes:**\n- Now researches updates for **ALL video games** included in the page that are NOT released (not just the 4 specified games)\n- Changed deployment target from **preview** to **prod**\n\n**Schedule:** Runs every Monday at 9:00 AM (cron: `0 9 * * 1`)\n\nThe task will now check all unreleased games in the Games Tracker page (Marvel's Wolverine, The Witcher 4: Polaris, Fable, World of Anterra, Kingfish, Dreadmoore) and deploy directly to production."
+    },
+    {
+      "role": "user",
+      "content": "Update the best open source models ranking page. Read content/media/best-open-source-models.html. Use web_search to find the latest rankings from LMSYS Chatbot Arena, Hugging Face Open LLM Leaderboard, and Papers with Code. Update the ranking table with current top 10 models, their scores, providers, categories, and update dates. Update the last updated date and sources. Keep the same HTML structure and styling. After updating, run npm run build, git add content/media/best-open-source-models.html, git commit with message 'chore: update open source models ranking [date]', git push, then deployStatic to both preview and prod.",
+      "sender_id": "scheduler"
     }
   ]
 }
