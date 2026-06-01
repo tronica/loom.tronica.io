@@ -85,6 +85,15 @@
       "role": "user",
       "content": "Update the Games Tracker page at content/media/2026-04-28-upcoming-games-2026.html with the latest information for these games: Marvel's Wolverine, The Witcher 4: Polaris, Fable, and World of Anterra. For each game: 1) Run web searches to check current release status, date, and any new announcements. 2) Update the release badges - if a game has been released, change its release badge to use class 'release-badge release-released' with text 'RELEASED'. 3) Update any release dates, descriptions, or metadata that have changed. 4) Update the 'Last updated' date at the top of the page. 5) Add any new sources with current access dates. Then rebuild the site with npm run build, git add content/media/2026-04-28-upcoming-games-2026.html, git commit with message 'chore: update games tracker [date]', git push, then deployStatic to preview.",
       "sender_id": "scheduler"
+    },
+    {
+      "role": "assistant",
+      "content": "Done! I've updated the Games Tracker page with the latest information.\n\n## Summary of Changes:\n\n**Verification Results (as of May 26, 2026):**\n- **Marvel's Wolverine**: Still scheduled for **Sep 15, 2026** - NOT released yet\n- **The Witcher 4: Polaris**: Still delayed to **2027** - NOT released yet\n- **Fable**: Still scheduled for **Autumn 2026** - NOT released yet\n- **World of Anterra**: Still scheduled for **Jun 1, 2026 (Early Access)** - NOT released yet\n\n**Updates Made:**\n- Updated \"Last updated\" date from **19 May 2026** \u2192 **26 May 2026**\n- Updated **Fable** description to include PS5 platform (\"First Fable on PS5\")\n- Updated all **23 source access dates** from **2026-05-19** \u2192 **2026-05-26**\n- Added **5 new current sources**:\n  - ScreenRant - Wolverine May 2026 Update\n  - CBR - Wolverine Official Release Update\n  - Vice - Fable 2026 Release Date Update\n  - PlayStation Blog - Fable PS5 Confirmation\n  - VGTimes - World of Anterra Release Dates\n- **No release badge changes needed** - none of the four tracked games have been released yet\n\n**Deployment:**\n\u2705 Built with `npm run build`\n\u2705 Committed: `chore: update games tracker 2026-05-26`\n\u2705 Pushed to GitHub\n\u2705 **Deployed to preview** (/?preview=1)"
+    },
+    {
+      "role": "user",
+      "content": "Update the best open source models ranking page. Read content/media/best-open-source-models.html. Use web_search to find the latest rankings from LMSYS Chatbot Arena, Hugging Face Open LLM Leaderboard, and Papers with Code. Update the ranking table with current top 10 models, their scores, providers, categories, and update dates. Update the last updated date and sources. Keep the same HTML structure and styling. After updating, run npm run build, git add content/media/best-open-source-models.html, git commit with message 'chore: update open source models ranking [date]', git push, then deployStatic to both preview and prod.",
+      "sender_id": "scheduler"
     }
   ]
 }
