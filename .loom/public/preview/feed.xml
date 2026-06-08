@@ -9,7 +9,7 @@
     <item>
       <title>Best Open Source Models</title>
       <link>https://loom.tronica.io/media/best-open-source-models/</link>
-      <pubDate>2026-06-01</pubDate>
+      <pubDate>2026-06-08</pubDate>
       <guid isPermaLink="true">https://loom.tronica.io/media/best-open-source-models/</guid>
       <description>
 &lt;style&gt;
@@ -243,7 +243,7 @@
 &lt;div class=&quot;models-container&quot;&gt;
   &lt;div class=&quot;models-masthead&quot;&gt;
     &lt;h1&gt;Best Open Source Models&lt;/h1&gt;
-    &lt;p class=&quot;models-subtitle&quot;&gt;Weekly ranking — Last updated: 2026-06-01&lt;/p&gt;
+    &lt;p class=&quot;models-subtitle&quot;&gt;Weekly ranking — Last updated: 2026-06-08&lt;/p&gt;
   &lt;/div&gt;
 
   &lt;div class=&quot;ranking-table-container&quot;&gt;
@@ -265,17 +265,17 @@
           &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://z.ai/blog/glm-5.1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GLM-5.1&lt;/a&gt;&lt;/td&gt;
           &lt;td class=&quot;provider-cell&quot;&gt;Z.ai&lt;/td&gt;
           &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
-          &lt;td class=&quot;score-cell&quot;&gt;89.6%&lt;/td&gt;
-          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-28&lt;/td&gt;
-          &lt;td class=&quot;notes-cell&quot;&gt;#1 on LMArena (1474 Elo), SOTA coding (58.4% SWE-Bench Pro), 200K context, enterprise-ready, MIT license&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;89.7%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-06-05&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;#1 on LMArena (1475 Elo), SOTA coding (58.4% SWE-Bench Pro), 200K context, enterprise-ready, MIT license&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
           &lt;td class=&quot;rank-cell&quot;&gt;2&lt;/td&gt;
           &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://mimo.xiaomi.com/mimo-v2-5-pro/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MiMo v2.5 Pro&lt;/a&gt;&lt;/td&gt;
           &lt;td class=&quot;provider-cell&quot;&gt;Xiaomi&lt;/td&gt;
           &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
-          &lt;td class=&quot;score-cell&quot;&gt;89.2%&lt;/td&gt;
-          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-28&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;89.3%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-06-05&lt;/td&gt;
           &lt;td class=&quot;notes-cell&quot;&gt;#2 on LMArena (1465 Elo), 1M context, strong reasoning &amp; Chinese performance, MIT license&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
@@ -283,17 +283,17 @@
           &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://www.kimi.com/blog/kimi-k2-6&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Kimi K2.6 (Thinking)&lt;/a&gt;&lt;/td&gt;
           &lt;td class=&quot;provider-cell&quot;&gt;Moonshot AI&lt;/td&gt;
           &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
-          &lt;td class=&quot;score-cell&quot;&gt;89.0%&lt;/td&gt;
-          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-30&lt;/td&gt;
-          &lt;td class=&quot;notes-cell&quot;&gt;#3 on LMArena (1462 Elo), SOTA complex coding (58.6% SWE-Bench Pro), 262K context, top AAI Index (54), Modified MIT&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;89.1%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-06-05&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;#3 on LMArena (1461 Elo), SOTA complex coding (58.6% SWE-Bench Pro), 262K context, top AAI Index (54), Modified MIT&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
           &lt;td class=&quot;rank-cell&quot;&gt;4&lt;/td&gt;
           &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://api-docs.deepseek.com/news/news260424&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;DeepSeek V4 Pro (Thinking)&lt;/a&gt;&lt;/td&gt;
           &lt;td class=&quot;provider-cell&quot;&gt;DeepSeek&lt;/td&gt;
           &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
-          &lt;td class=&quot;score-cell&quot;&gt;88.8%&lt;/td&gt;
-          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-30&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;88.9%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-06-07&lt;/td&gt;
           &lt;td class=&quot;notes-cell&quot;&gt;#4 on LMArena (1458 Elo), 1M context, strong reasoning &amp; tool calls, JSON output, MIT license&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
@@ -301,53 +301,53 @@
           &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://z.ai/blog/glm-5&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GLM-5&lt;/a&gt;&lt;/td&gt;
           &lt;td class=&quot;provider-cell&quot;&gt;Z.ai&lt;/td&gt;
           &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
-          &lt;td class=&quot;score-cell&quot;&gt;88.5%&lt;/td&gt;
-          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-25&lt;/td&gt;
-          &lt;td class=&quot;notes-cell&quot;&gt;#5 on LMArena (1457 Elo), strong multilingual (95 MGSM), SOTA agentic tasks, predecessor to GLM-5.1, MIT&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;88.8%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-06-05&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;#5 on LMArena (1458 Elo), strong multilingual (95 MGSM), SOTA agentic tasks, predecessor to GLM-5.1, MIT&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
           &lt;td class=&quot;rank-cell&quot;&gt;6&lt;/td&gt;
           &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://api-docs.deepseek.com/news/news260424&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;DeepSeek V4 Pro&lt;/a&gt;&lt;/td&gt;
           &lt;td class=&quot;provider-cell&quot;&gt;DeepSeek&lt;/td&gt;
           &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
-          &lt;td class=&quot;score-cell&quot;&gt;88.4%&lt;/td&gt;
-          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-30&lt;/td&gt;
-          &lt;td class=&quot;notes-cell&quot;&gt;#6 on LMArena (1454 Elo), 1M context, strong reasoning &amp; tool calls, JSON output, MIT license&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;88.7%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-06-07&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;#6 on LMArena (1457 Elo), 1M context, strong reasoning &amp; tool calls, JSON output, MIT license&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
           &lt;td class=&quot;rank-cell&quot;&gt;7&lt;/td&gt;
           &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://aistudio.google.com/app/prompts/new_chat?model=gemma-4-31b-it&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Gemma 4 31B&lt;/a&gt;&lt;/td&gt;
           &lt;td class=&quot;provider-cell&quot;&gt;Google&lt;/td&gt;
           &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
-          &lt;td class=&quot;score-cell&quot;&gt;88.1%&lt;/td&gt;
-          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-28&lt;/td&gt;
-          &lt;td class=&quot;notes-cell&quot;&gt;#7 on LMArena (1452 Elo), 262K context, cost-effective ($0.14/$0.40 per M), Apache 2.0&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;88.2%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-06-05&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;#7 on LMArena (1451 Elo), 262K context, cost-effective ($0.14/$0.40 per M), Apache 2.0&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
           &lt;td class=&quot;rank-cell&quot;&gt;8&lt;/td&gt;
           &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://www.kimi.com/blog/kimi-k2-5.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Kimi K2.5 (Thinking)&lt;/a&gt;&lt;/td&gt;
           &lt;td class=&quot;provider-cell&quot;&gt;Moonshot AI&lt;/td&gt;
           &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
-          &lt;td class=&quot;score-cell&quot;&gt;87.9%&lt;/td&gt;
-          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-25&lt;/td&gt;
-          &lt;td class=&quot;notes-cell&quot;&gt;#8 on LMArena (1449 Elo), 96.1% AIME 2025, 76.8% SWE-Bench Verified, 262K context, Modified MIT&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;88.0%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-06-05&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;#8 on LMArena (1450 Elo), 96.1% AIME 2025, 76.8% SWE-Bench Verified, 262K context, Modified MIT&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
           &lt;td class=&quot;rank-cell&quot;&gt;9&lt;/td&gt;
           &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://huggingface.co/Qwen/Qwen3.5-397B-A17B&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Qwen 3.5 397B (Reasoning)&lt;/a&gt;&lt;/td&gt;
           &lt;td class=&quot;provider-cell&quot;&gt;Alibaba Cloud&lt;/td&gt;
           &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
-          &lt;td class=&quot;score-cell&quot;&gt;87.6%&lt;/td&gt;
-          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-28&lt;/td&gt;
-          &lt;td class=&quot;notes-cell&quot;&gt;#9 on LMArena (1445 Elo), leads GPQA Diamond (88.4%) &amp; AIME 2026, strongest reasoning in Qwen family, Apache 2.0&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;87.7%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-06-07&lt;/td&gt;
+          &lt;td class=&quot;notes-cell&quot;&gt;#9 on LMArena (1444 Elo), leads GPQA Diamond (88.4%) &amp; AIME 2026, strongest reasoning in Qwen family, Apache 2.0&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
           &lt;td class=&quot;rank-cell&quot;&gt;10&lt;/td&gt;
           &lt;td class=&quot;model-cell&quot;&gt;&lt;a href=&quot;https://z.ai/blog/glm-4.7&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GLM-4.7&lt;/a&gt;&lt;/td&gt;
           &lt;td class=&quot;provider-cell&quot;&gt;Z.ai&lt;/td&gt;
           &lt;td class=&quot;category-cell&quot;&gt;&lt;span class=&quot;badge badge-llm&quot;&gt;LLM&lt;/span&gt;&lt;/td&gt;
-          &lt;td class=&quot;score-cell&quot;&gt;87.4%&lt;/td&gt;
-          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-05-25&lt;/td&gt;
+          &lt;td class=&quot;score-cell&quot;&gt;87.5%&lt;/td&gt;
+          &lt;td class=&quot;last-updated-cell&quot;&gt;2026-06-05&lt;/td&gt;
           &lt;td class=&quot;notes-cell&quot;&gt;#10 on LMArena (1443 Elo), strong reasoning &amp; coding, 95.7% AIME 2025, 73.8% SWE-Bench Verified, MIT&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
@@ -364,32 +364,32 @@
     &lt;div class=&quot;sources-grid&quot;&gt;
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://arena.ai/leaderboard/text?license=open-source&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LMSYS Chatbot Arena Open-Source Leaderboard&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-06-01&lt;/div&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-06-08&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hugging Face Open LLM Leaderboard&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-06-01&lt;/div&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-06-08&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://llm-stats.com/leaderboards/open-llm-leaderboard&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LLM Stats Open LLM Leaderboard 2026&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-06-01&lt;/div&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-06-08&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://benchlm.ai/blog/posts/best-open-source-llm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;BenchLM.ai - Best Open Source LLM 2026&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-06-01&lt;/div&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-06-08&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://huggingface.co/blog/daya-shankar/open-source-llms&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hugging Face - Best Open-Source LLM Models in 2026&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-06-01&lt;/div&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-06-08&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;source-item&quot;&gt;
         &lt;a href=&quot;https://kilo.ai/open-source-models&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Kilo.ai - Best Open-Source &amp; Open-Weight Coding Models&lt;/a&gt;
-        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-06-01&lt;/div&gt;
+        &lt;div class=&quot;source-meta&quot;&gt;Accessed: 2026-06-08&lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;p class=&quot;updated-note&quot;&gt;Updated manually on 2026-06-01 — Next automated update: 2026-06-08&lt;/p&gt;
+  &lt;p class=&quot;updated-note&quot;&gt;Updated manually on 2026-06-08 — Next automated update: 2026-06-15&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
